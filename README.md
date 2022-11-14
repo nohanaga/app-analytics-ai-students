@@ -25,9 +25,9 @@
  - Challenge-03 [トリガーを使用して外部イベントを検出する](https://learn.microsoft.com/ja-jp/training/modules/route-and-process-data-logic-apps/3-detect-external-event-using-trigger)
  - Challenge-04 [演習 - ソーシャル メディア トラッカー ロジック アプリを作成する](./4-ex-create-social-media-tracker.md)
  - Challenge-05 [アクションを実行する](https://learn.microsoft.com/ja-jp/training/modules/route-and-process-data-logic-apps/5-execute-an-action)
- - Challenge-06 [演習 - ツイートのコンテンツを分析する](./Challenge-06.md)
+ - Challenge-06 [演習 - ツイートのコンテンツを分析する](./6-ex-analyze-content-of-tweet.md)
  - Challenge-07 [コントロール アクションを使用して制御フローを変更する](https://learn.microsoft.com/ja-jp/training/modules/route-and-process-data-logic-apps/7-alter-control-flow-using-control-action)
- - Challenge-08 [演習 - ツイートの感情に基づいて分岐する](https://learn.microsoft.com/ja-jp/training/modules/route-and-process-data-logic-apps/8-ex-branch-based-on-tweet-sentiment)
+ - Challenge-08 [演習 - ツイートの感情に基づいて分岐する](./8-ex-branch-based-on-tweet-sentiment.md)
  - Challenge-09 [まとめ](https://learn.microsoft.com/ja-jp/training/modules/route-and-process-data-logic-apps/9-summary)
 
 
