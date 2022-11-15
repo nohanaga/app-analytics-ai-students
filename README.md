@@ -57,4 +57,4 @@ Azure Static Web Apps と Azure Functions を使用して、React の JavaScript
 ### 4. クラウドネイティブアプリを体感する
 これまでに身に着けた知識を総動員して、クラウドネイティブで AI を搭載した Web アプリケーションを開発します。
 
- - Challenge-01 [はじめに](./2-1-introduction.md)
+ - Challenge-01 [Twitter トレンド トラッカー ロジック アプリを作成する](./4-1-ex-create-social-media-tracker.md)
