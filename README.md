@@ -35,10 +35,3 @@
 
 ### 3. Static Web Apps で SPA 開発
 
-
-
-
-
-## Contributed by
- - []()
- - [Nobusuke Hanagasaki](https://github.com/nohanaga)
