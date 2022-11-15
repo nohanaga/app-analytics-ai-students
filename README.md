@@ -1,7 +1,6 @@
-# Logic Apps を使用して自動的にデータをルートし、処理する
+# Azure Basic Hands-on トレーニング 
 
 ## Introduction
-組み込みのトリガー、アクション、および条件演算子を使用してワークフローを定義します。 ワークフローはデータがあるときに自動的に実行され、クラウド内のデータを処理し、データベースで結果を記録し、電子メール通知を送信します。
 
 ## Scenario
 
@@ -19,6 +18,8 @@
  - 条件付きステートメントやループなどのプログラミングの概念に関する知識
 
 ## Contents
+### 1. Logic Apps で感情分析アプリ開発
+組み込みのトリガー、アクション、および条件演算子を使用してワークフローを定義します。 ワークフローはデータがあるときに自動的に実行され、クラウド内のデータを処理し、データベースで結果を記録し、電子メール通知を送信します。
 
  - Challenge-01 [はじめに](https://learn.microsoft.com/training/modules/route-and-process-data-logic-apps/1-introduction)
  - Challenge-02 [ワークフロー用に Logic Apps を設計する](https://learn.microsoft.com/training/modules/route-and-process-data-logic-apps/2-design-logic-apps-for-your-workflows)
@@ -29,6 +30,13 @@
  - Challenge-07 [コントロール アクションを使用して制御フローを変更する](https://learn.microsoft.com/ja-jp/training/modules/route-and-process-data-logic-apps/7-alter-control-flow-using-control-action)
  - Challenge-08 [演習 - ツイートの感情に基づいて分岐する](./8-ex-branch-based-on-tweet-sentiment.md)
  - Challenge-09 [まとめ](https://learn.microsoft.com/ja-jp/training/modules/route-and-process-data-logic-apps/9-summary)
+
+### 2. Functions から NoSQL Database にデータ投入
+
+### 3. Static Web Apps で SPA 開発
+
+
+
 
 
 ## Contributed by
