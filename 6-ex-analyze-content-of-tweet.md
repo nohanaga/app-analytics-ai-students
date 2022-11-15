@@ -1,6 +1,6 @@
 # 演習 - ツイートのコンテンツを分析する
 
-**[Home](./README.md)** - [Next Challenge >](./Challenge-01.md)
+[< Previous Challenge](https://learn.microsoft.com/training/modules/route-and-process-data-logic-apps/5-execute-an-action) - **[Home](./README.md)** - [Next Challenge >](https://learn.microsoft.com/training/modules/route-and-process-data-logic-apps/7-alter-control-flow-using-control-action)
 
 この演習では、引き続きソーシャル メディア監視アプリで作業を行います。 自社の製品に関するツイートが肯定的なものか否定的なものかどうかについて分析します。 ツイートのセンチメントを表す数値の "スコア" を提供するセンチメントの検出アクションを作成します。 次の図は、作業を行う部分が強調表示された、アプリの概念図を示しています。
 

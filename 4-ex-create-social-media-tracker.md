@@ -1,6 +1,6 @@
 # 演習 - ソーシャル メディア トラッカー ロジック アプリを作成する
 
-**[Home](./README.md)** - [Next Challenge >](./Challenge-01.md)
+[< Previous Challenge](https://learn.microsoft.com/training/modules/route-and-process-data-logic-apps/3-detect-external-event-using-trigger) - **[Home](./README.md)** - [Next Challenge >](https://learn.microsoft.com/training/modules/route-and-process-data-logic-apps/5-execute-an-action)
 
 この演習では、Azure portal を使用して、ソーシャル メディア ロジック アプリを作成します。 Logic Apps デザイナーを使用して Twitter トリガーを追加します。 次の図は、作業を行う部分が強調表示された、アプリの概念図を示しています。
 
