@@ -32,11 +32,11 @@
  - Challenge-01 [はじめに](https://learn.microsoft.com/training/modules/route-and-process-data-logic-apps/1-introduction)
  - Challenge-02 [ワークフロー用に Logic Apps を設計する](https://learn.microsoft.com/training/modules/route-and-process-data-logic-apps/2-design-logic-apps-for-your-workflows)
  - Challenge-03 [トリガーを使用して外部イベントを検出する](https://learn.microsoft.com/training/modules/route-and-process-data-logic-apps/3-detect-external-event-using-trigger)
- - Challenge-04 [演習 - ソーシャル メディア トラッカー ロジック アプリを作成する](./4-ex-create-social-media-tracker.md)
+ - Challenge-04 [演習 - ソーシャル メディア トラッカー ロジック アプリを作成する](./1-4-ex-create-social-media-tracker.md)
  - Challenge-05 [アクションを実行する](https://learn.microsoft.com/training/modules/route-and-process-data-logic-apps/5-execute-an-action)
- - Challenge-06 [演習 - ツイートのコンテンツを分析する](./6-ex-analyze-content-of-tweet.md)
+ - Challenge-06 [演習 - ツイートのコンテンツを分析する](./1-6-ex-analyze-content-of-tweet.md)
  - Challenge-07 [コントロール アクションを使用して制御フローを変更する](https://learn.microsoft.com/training/modules/route-and-process-data-logic-apps/7-alter-control-flow-using-control-action)
- - Challenge-08 [演習 - ツイートの感情に基づいて分岐する](./8-ex-branch-based-on-tweet-sentiment.md)
+ - Challenge-08 [演習 - ツイートの感情に基づいて分岐する](./1-8-ex-branch-based-on-tweet-sentiment.md)
  - Challenge-09 [まとめ](https://learn.microsoft.com/training/modules/route-and-process-data-logic-apps/9-summary)
 
 ### 2. Functions から NoSQL Database にデータ投入
@@ -53,3 +53,7 @@ Azure Static Web Apps と Azure Functions を使用して、React の JavaScript
  - Challenge-06 [演習 - GitHub Actions を使用して API を発行する](https://learn.microsoft.com/ja-jp/training/modules/publish-static-web-app-api-preview-url/6-exercise-action?pivots=react)
  - Challenge-07 [知識チェック](https://learn.microsoft.com/ja-jp/training/modules/publish-static-web-app-api-preview-url/7-knowledge-check)
  - Challenge-08 [まとめ](https://learn.microsoft.com/ja-jp/training/modules/publish-static-web-app-api-preview-url/8-summary)
+
+### 4. クラウドネイティブアプリを体感する
+
+ - Challenge-01 [はじめに](./2-1-introduction.md)
