@@ -10,15 +10,15 @@
 1. [Azure portal](https://portal.azure.com/) にサインインします。
 1. 右側の Cloud Shell で、次の curl コマンドを実行して、GitHub から setup-sql-database.sh スクリプトをコピーします。
 
-```bash
-curl https://raw.githubusercontent.com/nohanaga/app-analytics-ai-students/main/scripts/setup-sql-database.sh > setup-sql-database.sh
-```
+    ```bash
+    curl https://raw.githubusercontent.com/nohanaga/app-analytics-ai-students/main/scripts/setup-sql-database.sh > setup-sql-database.sh
+    ```
 
 1. 次のコマンドを実行して、スクリプトを実行します。**[Resource Group]** の部分を既存のリソースグループ名で置き換えます。 このコマンドは数分かかります。
 
-```bash
-bash setup-sql-database.sh [Resource Group]
-```
+    ```bash
+    bash setup-sql-database.sh [Resource Group]
+    ```
 
 1. スクリプトが完了するのを待ちます。 完了すると、Cloud Shell には、次のプロパティの値が表示されます。
 
