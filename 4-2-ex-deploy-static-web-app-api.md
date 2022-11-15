@@ -113,10 +113,10 @@ React のローカル ホストは `http://localhost:3000` です。
 
     |  Prompt  |  値  |
     | ---- | ---- |
-    |  名前  |  **`twitter-analytics-app`** と入力する  |
+    |  名前  |  **`twitter-analytics-app`** と入力します  |
     |  リージョン  |  最も近いリージョンを選択します  |
-    |  プリセット  |  **React** の選択  |
-    |  アプリケーション コードの場所  |  **`react-app`** と入力する  |
+    |  プリセット  |  **React** を選択します  |
+    |  アプリケーション コードの場所  |  **`react-app`** と入力します  |
     |  Output location (出力場所)  |  **`build`** と入力します  |
     
 1. アプリが作成されると、確認通知が Visual Studio Code に表示されます。ビルドの構成中、Visual Studio Code にビルドの状態が示されます。
@@ -132,6 +132,7 @@ React のローカル ホストは `http://localhost:3000` です。
 
 おめでとうございます。 アプリを Azure Static Web Apps にデプロイしました。
 
+![Tweets Analytics Dashboard](./images/image4-005.png)
 
 > **注意**
 > アプリがまだビルドおよびデプロイされていないことを示す Web ページが表示されても心配しないでください。 しばらくしてからブラウザーを再更新してみてください。 Azure 静的 Web アプリが作成されると、GitHub アクションによって自動的に実行されます。 そのため、スプラッシュ ページが表示されても、アプリはデプロイ中です。
