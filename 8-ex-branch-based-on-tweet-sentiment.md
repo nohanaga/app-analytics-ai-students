@@ -130,13 +130,8 @@ SQL Server アクションが作成されましたが、ツイート データ�
 1. 前のユニットでスクリプトを作成したときに保存したサーバー管理者のログインとパスワードを使用してサインインします。
 1. [OK] を選択します。
 1. 上部のメニュー バーで [新しいクエリ] を選択します。
-1. クエリ エディターで「Select * from dbo.mentions」と入力します。
+1. クエリ エディターで `SELECT * FROM dbo.Mentions` と入力します。
 1. [実行] を選択してクエリを実行し、データベースに書き込まれたすべての肯定的なツイートを一覧表示します。
-
-
-
-
-
 
 
 ### 次のユニット:[コントロール アクションを使用して制御フローを変更する](https://learn.microsoft.com/training/modules/route-and-process-data-logic-apps/7-alter-control-flow-using-control-action)
