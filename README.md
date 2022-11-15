@@ -58,5 +58,5 @@ Azure Static Web Apps と Azure Functions を使用して、React の JavaScript
 これまでに身に着けた知識を総動員して、クラウドネイティブで AI を搭載した Web アプリケーションを開発します。
 
  - Challenge-01 [Twitter トレンド トラッカー ロジック アプリを作成する](./4-1-ex-create-social-media-tracker.md)
- - Challenge-02 [Azure Static Web Apps で Web アプリをデプロイする](./4-2-ex-deploy-static-web-app-api.md)
+ - Challenge-02 [Azure Static Web Apps で Twitter 分析 Web アプリをデプロイする](./4-2-ex-deploy-static-web-app-api.md)
 
