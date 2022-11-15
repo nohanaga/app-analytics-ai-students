@@ -149,12 +149,16 @@ Cosmos DB アクションが作成されましたが、ツイート データを
 
     ```
     {
-      "data": @{triggerBody()},
+      "data": ,
       "id": @{guid()},
-      "score": @{items('For_each')['confidenceScores']},
-      "sentences": @{items('For_each')['sentences']},
-      "sentiment": @{items('For_each')['sentiment']}
+      "score": ,
+      "sentences": ,
+      "sentiment": 
     }
     ```
+    
+1. 下記画像と同じになるように動的コンテンツのポップアップから項目を選択します。
+
+    ![Cosmos DB ドキュメントの設定](./images/image4-001.png)
 
 1. [保存] を選択します。
