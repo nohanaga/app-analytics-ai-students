@@ -1,8 +1,8 @@
 # 演習 - Twitter トレンド トラッカー ロジック アプリを作成する
 
-[< Previous Challenge](https://learn.microsoft.com/training/modules/route-and-process-data-logic-apps/3-detect-external-event-using-trigger) - **[Home](./README.md)** - [Next Challenge >](https://learn.microsoft.com/training/modules/route-and-process-data-logic-apps/5-execute-an-action)
+**[Home](./README.md)** - [Next Challenge >](./4-2-ex-deploy-static-web-app-api.md)
 
-この演習では、Azure portal を使用して、ソーシャル メディア ロジック アプリを作成します。 Logic Apps デザイナーを使用して Twitter トリガーを追加します。 次の図は、作業を行う部分が強調表示された、アプリの概念図を示しています。
+この演習では、Azure portal を使用して、Twitter トレンド トラッカー ロジック アプリを作成します。 Logic Apps デザイナーを使用して Twitter トリガー、センチメント分析を行い、最後に Cosmos DB にすべてのツイートデータを分析結果と共に保存します。 次の図は、作業を行う部分が強調表示された、アプリの概念図を示しています。
 
 # 全体像 
 1. Azure ロジック アプリのリソースを見つける
@@ -176,4 +176,4 @@ Cosmos DB アクションが作成されましたが、ツイート データを
 
 Cosmos DB は Twitter のようなユーザーが生成したコンテンツ(UGC)の保管に向いています。ソーシャル メディア アプリケーション内の UGC は、多くの場合、厳格な構造による制約のない、自由形式のテキスト、プロパティ、タグ、およびリレーションシップが組み合わさったものです。 チャット、コメント、投稿などのコンテンツは Azure Cosmos DB に格納でき、リレーショナル マッピング層に変換や複雑なオブジェクトは必要ありません。 開発者がアプリケーション コードを反復処理する際、要件に合うようにデータのプロパティを簡単に追加または変更できるため、迅速な開発が促進されます。
 
-### 次のユニット:[Azure Static Web Apps で Web アプリをデプロイする](https://learn.microsoft.com/training/modules/route-and-process-data-logic-apps/7-alter-control-flow-using-control-action)
+### 次のユニット:[Azure Static Web Apps で Web アプリをデプロイする](./4-2-ex-deploy-static-web-app-api.md)
