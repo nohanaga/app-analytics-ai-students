@@ -1,4 +1,4 @@
-# 演習 - ソーシャル メディア トラッカー ロジック アプリを作成する
+# 演習 - Twitter トレンド トラッカー ロジック アプリを作成する
 
 [< Previous Challenge](https://learn.microsoft.com/training/modules/route-and-process-data-logic-apps/3-detect-external-event-using-trigger) - **[Home](./README.md)** - [Next Challenge >](https://learn.microsoft.com/training/modules/route-and-process-data-logic-apps/5-execute-an-action)
 
@@ -156,7 +156,7 @@ Cosmos DB アクションが作成されましたが、ツイート データを
       "sentiment": 
     }
     ```
-    
+
 1. 下記画像と同じになるように動的コンテンツのポップアップから項目を選択します。
 
     ![Cosmos DB ドキュメントの設定](./images/image4-001.png)
