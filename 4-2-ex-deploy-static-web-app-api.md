@@ -6,7 +6,6 @@
 
 # 全体像 
 1. React を使用して既存の Web アプリ プロジェクトを選択する
-1. Azure Functions を使用してアプリの API を作成する
 1. ローカルでアプリケーションを実行する
 1. アプリを Azure Static Web Apps に発行する
 1. アプリとその API を Azure Static Web Apps に発行し、ステージング サイトに発行する
@@ -79,9 +78,51 @@ React のローカル ホストは `http://localhost:3000` です。
 
 <img src="./images/image4-002.png" width="700">
 
-データや API がまだないため、アプリには数値やグラフが表示されません。 このレッスンでは、後で Web アプリ用の API を追加します。
+このプロジェクトには既に API が含まれていますが、Functions が起動しておらず、データベースへの接続情報がまだないためアプリには数値やグラフが表示されません。データベースへの接続情報をコードに埋め込むのはセキュリティ上の問題がありますので、ローカル開発・リモート開発それぞれで環境変数を追加することによって接続を行います。
 
-ターミナルで、<kbd>Ctrl</kbd>+<kbd>C</kbd> キーを押してバッチ ジョブを停止します。
+## ローカル環境で環境変数を追加する
+1. `api/local.settings.json` という名前のファイルを作成します。
+1. そのファイルに次の内容を追加します。
+
+```json
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "COSMOSDB_CONNECTIONSTRING": "AccountEndpoint=https://[Account ID].documents.azure.com:443/;AccountKey=xxx;",
+    "COSMOSDB_SQL_API_DATABASE_NAME": "TwitterDatabase",
+    "COSMOSDB_SQL_API_CONTAINER_NAME": "Twitter"
+  }
+}
+```
+
+## API を実行する
+
+> **注意**
+> Azure Functions をローカルで実行できるように、Azure Functions Core Tools を必ずインストールしてください。
+
+1. Visual Studio Code で、<kbd>F1</kbd> キーを押してコマンド パレットを開きます。
+1. 「(アクティブなワークスペースで) Terminal: Create New Terminal」と入力して選択します。
+1. `api` フォルダーに移動します。
+
+    ```bash
+    cd api
+    ```
+
+1. API の依存関係をインストールします。
+
+    ```bash
+    npm install
+    ```
+
+1. Azure Functions アプリをローカルで実行します。
+
+    ```bash
+    func start
+    ```
+
+    これでポート 3000 に React フロントエンドが、ポート 7071 で API バックエンドが起動している状態になります。終了するには各ターミナルで、<kbd>Ctrl</kbd>+<kbd>C</kbd> キーを押してバッチ ジョブを停止します。
 
 おめでとうございます。 アプリケーションをビルドし、ローカルに実行されていることをブラウザーで確認しました。 これで、アプリケーションを Azure Static Web Apps に発行できます。
 
