@@ -82,7 +82,7 @@ React のローカル ホストは `http://localhost:3000` です。
 
 ## ローカル環境で環境変数を追加する
 1. `api/local.settings.json` という名前のファイルを作成します。
-1. そのファイルに次の内容を追加します。
+1. そのファイルに次の内容を追加します。`COSMOSDB_CONNECTIONSTRING` には Cosmos DB の接続文字列を貼り付けます。
 
 ```json
 {
