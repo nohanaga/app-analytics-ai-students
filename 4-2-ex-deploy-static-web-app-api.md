@@ -107,17 +107,17 @@ React のローカル ホストは `http://localhost:3000` です。
 静的 Web アプリを作成するには、現在 Azure および GitHub で認証されているセッションが必要です。 両方のプロバイダーにまだサインインしていない場合は、作成プロセス中に、拡張機能により、サインインするように求められます。
 
 1. <kbd>F1</kbd> キーを選択して、Visual Studio Code コマンド パレットを開きます。
-1. 「Azure Static Web Apps: Create Static Web App...」と入力して選択します。
+1. 「Azure Static Web Apps: Create Static Web App」と入力して選択します。
 
     コマンド パレット プロンプトの残りの部分に次の値を入力します。
 
     |  Prompt  |  値  |
     | ---- | ---- |
-    |  名前  |  **`twitter-analytics-app`** と入力します  |
+    |  名前  |  `twitter-analytics-app` と入力します  |
     |  リージョン  |  最も近いリージョンを選択します  |
-    |  プリセット  |  **React** を選択します  |
-    |  アプリケーション コードの場所  |  **`react-app`** と入力します  |
-    |  Output location (出力場所)  |  **`build`** と入力します  |
+    |  プリセット  |  React を選択します  |
+    |  アプリケーション コードの場所  |  `react-app` と入力します  |
+    |  Output location (出力場所)  |  `build` と入力します  |
     
 1. アプリが作成されると、確認通知が Visual Studio Code に表示されます。ビルドの構成中、Visual Studio Code にビルドの状態が示されます。
 
