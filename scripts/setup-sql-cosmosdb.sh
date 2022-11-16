@@ -11,6 +11,8 @@ az cosmosdb sql database create --name $databaseName --account-name $accountName
 az cosmosdb sql container create --name $containerName --unique-key-policy "{\"uniqueKeys\": [{\"paths\": [\"/data/TweetId\"]}]}" --partition-key-path "/partitionkey" --database-name $databaseName --account-name $accountName --resource-group $resourceGroup
 keys_json=$(az cosmosdb keys list --name $accountName --resource-group $resourceGroup --type keys)
 key=$( echo $keys_json | jq -r '.primaryMasterKey')
+con_string_json=$(az cosmosdb keys list --name $accountName --resource-group $resourceGroup --type connection-strings)
+con_string=$( echo $con_string_json | jq -r '.connectionStrings[0].connectionString')
 
 echo
 echo "Done!"
@@ -24,4 +26,6 @@ echo
 echo "Container Name: $containerName"
 echo
 echo "Access Key: $key"
+echo
+echo "Connection String: $con_string"
 echo

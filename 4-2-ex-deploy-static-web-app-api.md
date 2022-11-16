@@ -77,7 +77,7 @@
 
 React のローカル ホストは `http://localhost:3000` です。
 
-![Web アプリケーション画面](./images/image4-002.png)
+<img src="./images/image4-002.png" width="700">
 
 データや API がまだないため、アプリには数値やグラフが表示されません。 このレッスンでは、後で Web アプリ用の API を追加します。
 
@@ -120,19 +120,33 @@ React のローカル ホストは `http://localhost:3000` です。
     |  Output location (出力場所)  |  **`build`** と入力します  |
     
 1. アプリが作成されると、確認通知が Visual Studio Code に表示されます。ビルドの構成中、Visual Studio Code にビルドの状態が示されます。
+
+1. Visual Studio Code の Azure アイコンをクリックし、[RESOURCES] ペインから [Static Web Apps] ツリーを開き、`twitter-analytics-app` を選択します。右クリックメニューから [Open in Portal] をクリックします。
+
+    <img src="./images/image4-006.png" width="400">
+
+1. ブラウザから Azure portal の Static Web Apps ページが開きます。左メニューから [設定] セクションの [構成] を選択します。右側の [アプリケーション設定] タブから下記の環境変数を追加して [保存] します。
+
+    |  Prompt  |  値  |
+    | ---- | ---- |
+    |  COSMOSDB_CONNECTIONSTRING  |  Cosmos DB スクリプト実行時に保存した接続文字列  |
+    |    |  接続文字列は `AccountEndpoint=https://[Account ID].documents.azure.com:443/;AccountKey=xxx;` のような形式です  |
+    |  COSMOSDB_SQL_API_DATABASE_NAME  |  `TwitterDatabase`  |
+    |  COSMOSDB_SQL_API_CONTAINER_NAME  |  `Twitter`  |
+
 1. GitHub Actions で [Actions] メニューを展開すると、デプロイの進行状況を参照できます。
 
-    ![Azure Static Web Apps 拡張](./images/image4-003.png)
+    <img src="./images/image4-003.png" width="400">
 
     デプロイが完了したら、Web サイトに直接移動できます。
 
 1. ブラウザーで Web サイトを表示するには、Static Web Apps 拡張機能でプロジェクトを右クリックし、 \[Browse Site](サイトの参照) を選択します。
 
-    ![Azure Static Web Apps 拡張](./images/image4-004.png)
+    <img src="./images/image4-004.png" width="400">
 
 おめでとうございます。 アプリを Azure Static Web Apps にデプロイしました。
 
-![Tweets Analytics Dashboard](./images/image4-005.png)
+<img src="./images/image4-005.png" width="700">
 
 > **注意**
 > アプリがまだビルドおよびデプロイされていないことを示す Web ページが表示されても心配しないでください。 しばらくしてからブラウザーを再更新してみてください。 Azure 静的 Web アプリが作成されると、GitHub アクションによって自動的に実行されます。 そのため、スプラッシュ ページが表示されても、アプリはデプロイ中です。
