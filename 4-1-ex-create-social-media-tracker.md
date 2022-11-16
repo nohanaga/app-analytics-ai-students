@@ -121,6 +121,7 @@ Twitter から得られるデータはツイートテキストだけではあり
     - Cosmos DB データベース名
     - Cosmos DB コンテナー名
     - Cosmos DB アクセスキー
+    - Cosmos DB 接続文字列
 
     Cloud Shell に表示される値を安全な場所に保存します。 これらは、この演習で、Azure portal でアプリを更新するときに必要です。
 

@@ -54,7 +54,7 @@ Azure Static Web Apps と Azure Functions を使用して、React の JavaScript
  - Challenge-07 [知識チェック](https://learn.microsoft.com/ja-jp/training/modules/publish-static-web-app-api-preview-url/7-knowledge-check)
  - Challenge-08 [まとめ](https://learn.microsoft.com/ja-jp/training/modules/publish-static-web-app-api-preview-url/8-summary)
 
-### 4. クラウドネイティブアプリを体感する
+### 4. 応用: クラウドネイティブアプリを体感する
 これまでに身に着けた知識を総動員して、クラウドネイティブで AI を搭載した Web アプリケーションを開発します。
 
  - Challenge-01 [Twitter トレンド トラッカー ロジック アプリを作成する](./4-1-ex-create-social-media-tracker.md)
