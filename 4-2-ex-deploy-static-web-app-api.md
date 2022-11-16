@@ -168,7 +168,7 @@ React のローカル ホストは `http://localhost:3000` です。
 
 1. ブラウザから Azure portal の Static Web Apps ページが開きます。左メニューから [設定] セクションの [構成] を選択します。右側の [アプリケーション設定] タブから下記の環境変数を追加して [保存] します。
 
-    |  Prompt  |  値  |
+    |  名前  |  値  |
     | ---- | ---- |
     |  COSMOSDB_CONNECTIONSTRING  |  Cosmos DB スクリプト実行時に保存した接続文字列  |
     |    |  接続文字列は `AccountEndpoint=https://[Account ID].documents.azure.com:443/;AccountKey=xxx;` のような形式です  |
