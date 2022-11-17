@@ -62,7 +62,7 @@
 
 React のローカル ホストでの URL は `http://localhost:3000` です。
 
-[image.png]
+![image](https://user-images.githubusercontent.com/4566555/202408274-7ae00831-1ec6-4851-a6ac-f3303475f192.png)
 
 データや API がまだないため、アプリに [**Loading data ...**] と表示されるはずです。 このレッスンでは、後で Web アプリ用の API を追加します。
 
@@ -144,15 +144,15 @@ React アプリケーションが含まれるフォルダーを開きます。
      | Output location (出力場所)	| `build` と入力します |
 
   1. アプリが作成されると、確認通知が Visual Studio Code に表示されます。  
-    [image.png]  
+    ![image](https://user-images.githubusercontent.com/4566555/202408416-70fff0a9-451c-4769-b69c-686978179d02.png)  
     ビルドの構成中、Visual Studio Code にビルドの状態が示されます。  
-    [image.png]
+    ![image](https://user-images.githubusercontent.com/4566555/202408484-1537a2ce-e793-4c05-b93b-94e749bc2b1a.png)
   
   1. GitHub Actions で [アクション] メニューを展開すると、デプロイの進行状況を参照できます。  
-    [image.png]  
+    ![image](https://user-images.githubusercontent.com/4566555/202408562-3a1b934d-4b68-47b3-a589-1f63f883c58c.png)  
      デプロイが完了したら、Web サイトに直接移動できます。
   1. ブラウザーで Web サイトを表示するには、Static Web Apps 拡張機能でプロジェクトを右クリックし、 [Browse Site] を選択します。    
-     [image.png]  
+     ![image](https://user-images.githubusercontent.com/4566555/202408646-aa52c317-817f-4d7e-ac50-75d37aa383b1.png)  
      データや API がまだないため、アプリに [Loading data ...] と表示されるはずです。 このモジュールでは、後で Web アプリ用の API を追加します。
 
 おめでとうございます。 アプリを Azure Static Web Apps にデプロイしました。
