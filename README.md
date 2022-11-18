@@ -12,6 +12,11 @@
 - 処理条件付きロジックを適用して、データをフィルターし、処理パスを選択する
 - Azure サービスをワークフローに統合する
 
+### 2. Functions から NoSQL Database にデータ投入
+- Azure の NoSQL である Cosmos DB について基礎を理解する
+- Visual Studio Code を使用して Azure に JavaScript 関数を作成する
+- Visual Studio Code を使用して Azure Functions を Azure Cosmos DB に接続する
+
 ### 3. Static Web Apps で SPA 開発
 - Angular、React、Svelte、または Vue を使用して既存の Web アプリ プロジェクトを選択する
 - Azure Functions を使用してアプリの API を作成する
@@ -40,7 +45,13 @@
  - Challenge-09 [まとめ](https://learn.microsoft.com/training/modules/route-and-process-data-logic-apps/9-summary)
 
 ### 2. Functions から NoSQL Database にデータ投入
-
+Azure の NoSQL である Cosmos DB とはどのようなデータストアなのかを理解し、そのうえで Azure Function から実際にデータを投入、参照してみます。
+ - Cosmos DB の説明には他のステップ同様に MS Learn の下記ページを参照します。
+ 　「Visual Studio Code で Azure Cosmos DB Core (SQL) 用の Node.js アプリを構築する 」
+　　[Cosmos DB インスタンスの作成](https://learn.microsoft.com/ja-jp/training/modules/build-node-cosmos-app-vscode/2-create-cosmosdb-instance)
+ - 演習は Cosmos DB Docs の下記ページを使用します。
+ - [クイックスタート: Visual Studio Code を使用して Azure に JavaScript 関数を作成する](https://learn.microsoft.com/ja-jp/azure/azure-functions/create-first-function-vs-code-node)
+ - [Visual Studio Code を使用して Azure Functions を Azure Cosmos DB に接続する](https://learn.microsoft.com/ja-jp/azure/azure-functions/functions-add-output-binding-cosmos-db-vs-code?pivots=programming-language-javascript&tabs=in-process)
 
 ### 3. Static Web Apps で SPA 開発
 Azure Static Web Apps と Azure Functions を使用して、React の JavaScript アプリと API を発行します。 プレビュー URL を使用して、GitHub からステージング サイトにコードをデプロイします。
