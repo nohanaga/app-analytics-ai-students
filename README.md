@@ -46,11 +46,11 @@
 Azure Static Web Apps と Azure Functions を使用して、React の JavaScript アプリと API を発行します。 プレビュー URL を使用して、GitHub からステージング サイトにコードをデプロイします。
 
  - Challenge-01 [はじめに](https://learn.microsoft.com/ja-jp/training/modules/publish-static-web-app-api-preview-url/1-introduction?pivots=react)
- - Challenge-02 [演習 - はじめに](https://learn.microsoft.com/ja-jp/training/modules/publish-static-web-app-api-preview-url/2-exercise-get-started?pivots=react)
+ - Challenge-02 [演習 - はじめに](./3-2-exercise-get-started.md)
  - Challenge-03 [Azure Functions を使用して API をビルドする](https://learn.microsoft.com/ja-jp/training/modules/publish-static-web-app-api-preview-url/3-build-api)
- - Challenge-04 [演習 - Azure Functions プロジェクトを作成する](https://learn.microsoft.com/ja-jp/training/modules/publish-static-web-app-api-preview-url/4-exercise-function-app?pivots=react)
+ - Challenge-04 [演習 - Azure Functions プロジェクトを作成する](./3-4-exercise-function-app.md)
  - Challenge-05 [GitHub Actions を使用して API を発行する](https://learn.microsoft.com/ja-jp/training/modules/publish-static-web-app-api-preview-url/5-action?pivots=react)
- - Challenge-06 [演習 - GitHub Actions を使用して API を発行する](https://learn.microsoft.com/ja-jp/training/modules/publish-static-web-app-api-preview-url/6-exercise-action?pivots=react)
+ - Challenge-06 [演習 - GitHub Actions を使用して API を発行する](./3-6-exercise-action.md)
  - Challenge-07 [知識チェック](https://learn.microsoft.com/ja-jp/training/modules/publish-static-web-app-api-preview-url/7-knowledge-check)
  - Challenge-08 [まとめ](https://learn.microsoft.com/ja-jp/training/modules/publish-static-web-app-api-preview-url/8-summary)
 
