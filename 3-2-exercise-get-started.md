@@ -1,5 +1,7 @@
 # 演習 - はじめに
 
+[< Previous Challenge](https://learn.microsoft.com/ja-jp/training/modules/publish-static-web-app-api-preview-url/1-introduction?pivots=react) - **[Home](./README.md)** - [Next Challenge >](https://learn.microsoft.com/ja-jp/training/modules/publish-static-web-app-api-preview-url/3-build-api)
+
 この演習では、Web サイトを自動的に構築して発行する GitHub アクションを含む、Azure Static Web App インスタンスを作成します。
 
 また Web サイトの構築に使用する JavaScript フレームワークとして React を使用します。
@@ -38,16 +40,11 @@
      cd react-app
      ```
 
-  1. アプリケーションの依存関係をインストールします。
+  1. 次の 2 つの `npm install` コマンドを 1 つずつ実行して、アプリケーションの依存関係を修正します。
 
      ```bash
-     npm install -D babel-eslint
-     ```
-
-  1. 次のコマンドを使用して、各依存関係の最新バージョンがインストールされていることを確認します。  
-
-     ```bash
-     npm audit fix --force
+     npm install node-sass@7 react-scripts@5
+     npm install --save-dev babel-eslint
      ```
 
   1. フロントエンド クライアント アプリケーションを実行します。

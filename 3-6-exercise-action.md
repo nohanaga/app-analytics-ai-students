@@ -1,4 +1,7 @@
 # 演習 - GitHub Actions を使用して API を発行する
+
+[< Previous Challenge](https://learn.microsoft.com/ja-jp/training/modules/publish-static-web-app-api-preview-url/5-action?pivots=react) - **[Home](./README.md)** - [Next Challenge >](https://learn.microsoft.com/ja-jp/training/modules/publish-static-web-app-api-preview-url/7-knowledge-check)
+
 Web アプリと API の両方がローカルで実行されています。 次は、Web アプリと API を Azure Static Web Apps に発行します。
 
 ## GitHub に変更をプッシュする
