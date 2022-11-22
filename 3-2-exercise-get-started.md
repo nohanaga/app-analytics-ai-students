@@ -38,7 +38,7 @@
      cd react-app
      ```
 
-  1. 次の 2 つの `npm install` コマンドを使用して、アプリケーションの依存関係を修正します。
+  1. 次の 2 つの `npm install` コマンドを 1 つずつ実行して、アプリケーションの依存関係を修正します。
 
      ```bash
      npm install node-sass@7 react-scripts@5
