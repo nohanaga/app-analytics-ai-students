@@ -1,5 +1,7 @@
 # 演習 - はじめに
 
+[< Previous Challenge](https://learn.microsoft.com/ja-jp/training/modules/publish-static-web-app-api-preview-url/1-introduction?pivots=react) - **[Home](./README.md)** - [Next Challenge >](https://learn.microsoft.com/ja-jp/training/modules/publish-static-web-app-api-preview-url/3-build-api)
+
 この演習では、Web サイトを自動的に構築して発行する GitHub アクションを含む、Azure Static Web App インスタンスを作成します。
 
 また Web サイトの構築に使用する JavaScript フレームワークとして React を使用します。

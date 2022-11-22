@@ -1,5 +1,7 @@
 # 演習 - Azure Functions プロジェクトを作成する
 
+[< Previous Challenge](https://learn.microsoft.com/ja-jp/training/modules/publish-static-web-app-api-preview-url/3-build-api) - **[Home](./README.md)** - [Next Challenge >](https://learn.microsoft.com/ja-jp/training/modules/publish-static-web-app-api-preview-url/5-action?pivots=react)
+
 ショッピング リスト Web アプリには API が必要です。 この演習では、Azure Functions プロジェクトを使用し、API をビルドして実行します。 そこから、Visual Studio Code 用の Azure Functions 拡張機能を使用して、新しい関数で API を拡張します。
 
 この演習では、次の手順を行います。
