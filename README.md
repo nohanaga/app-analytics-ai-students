@@ -1,6 +1,18 @@
 # Azure Basic Hands-on トレーニング 
 
 ## Introduction
+このトレーニングは、AI 搭載のクラウドネイティブ Web アプリケーションを迅速に構築する方法を学ぶことができます。
+
+ソーシャルデータを自動的に取得し、AI によるテキスト感情分析を行ってデータベースに保存するワークフローを作成します。データベースに保存したデータは、モダン Web フレームワークである React を用いてブラウザで可視化します。
+
+このトレーニングでは、以下のサービスを利用します。
+
+- Azure Logic Apps
+- Azure Cognitive Services
+- Azure SQL Database
+- Azure Cosmos DB
+- Azure Functions
+- Azure Static Web Apps
 
 ## Scenario
 
