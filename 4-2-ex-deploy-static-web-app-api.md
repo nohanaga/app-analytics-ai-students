@@ -16,7 +16,7 @@
 1. GitHub の[テンプレートからの作成ページ](https://github.com/nohanaga/static-web-app-and-api-demo)に移動し、テンプレート リポジトリを開きます。
 1. 緑色の [Use this template] ボタンをクリックし、\[Create a new repository](テンプレートからリポジトリを作成する) を選択します。
 1. Owner(所有者)の入力を求められた場合は、GitHub アカウントのいずれかを選択します。
-1. リポジトリ名として「twitter-analytics-app」を入力します。
+1. リポジトリ名として `twitter-analytics-app` を入力します。
 1. [Create repository from template] ボタンをクリックすると、GitHub によってバックグラウンドでリポジトリが構築されます。
 
 ## アプリをローカルで実行する
