@@ -1,9 +1,9 @@
 # Azure Basic Hands-on トレーニング 
 
 ## Introduction
-このトレーニングでは、AI 搭載のクラウドネイティブ Web アプリケーションを迅速に構築する方法を学ぶことができます。
+このトレーニングでは、AI 搭載のクラウドネイティブ Web アプリケーションを迅速に構築する方法を学ぶことができます。Azure を使うのが初めての方、Web アプリケーションの基本的な仕組みや開発手法を知りたい方、アプリケーションと AI の組み合わせ方法を知りたい方におすすめです。
 
-Twitter のようなソーシャルデータを自動的に取得し、AI によるテキスト感情分析を行ってデータベースに保存するワークフローを作成します。データベースに保存したデータは、モダン Web フレームワークである React を用いてブラウザで可視化します。
+まず Twitter のようなソーシャルデータを自動的に取得し、AI によるテキスト感情分析を行ってデータベースに保存するワークフローを作成します。データベースに保存したデータは集計などを行いながら、モダン Web フレームワークである React を用いてブラウザで可視化します。
 
 このトレーニングでは、以下のサービスを利用します。
 
@@ -60,12 +60,9 @@ Twitter のようなソーシャルデータを自動的に取得し、AI によ
 
 ### 2. Functions から NoSQL Database にデータ投入
 Azure の NoSQL である Cosmos DB とはどのようなデータストアなのかを理解し、そのうえで Azure Function から実際にデータを投入、参照してみます。
- - Cosmos DB の説明には他のステップ同様に MS Learn の下記ページを参照します。
- 　「Visual Studio Code で Azure Cosmos DB Core (SQL) 用の Node.js アプリを構築する 」
-　　[Cosmos DB インスタンスの作成](https://learn.microsoft.com/ja-jp/training/modules/build-node-cosmos-app-vscode/2-create-cosmosdb-instance)
- - 演習は Cosmos DB Docs の下記ページを使用します。
- - [クイックスタート: Visual Studio Code を使用して Azure に JavaScript 関数を作成する](https://learn.microsoft.com/ja-jp/azure/azure-functions/create-first-function-vs-code-node)
- - [Visual Studio Code を使用して Azure Functions を Azure Cosmos DB に接続する](https://learn.microsoft.com/ja-jp/azure/azure-functions/functions-add-output-binding-cosmos-db-vs-code?pivots=programming-language-javascript&tabs=in-process)
+ - Challenge-01 [Cosmos DB インスタンスの作成](https://learn.microsoft.com/ja-jp/training/modules/build-node-cosmos-app-vscode/2-create-cosmosdb-instance)
+ - Challenge-02 [クイックスタート: Visual Studio Code を使用して Azure に JavaScript 関数を作成する](https://learn.microsoft.com/ja-jp/azure/azure-functions/create-first-function-vs-code-node)
+ - Challenge-03 [Visual Studio Code を使用して Azure Functions を Azure Cosmos DB に接続する](https://learn.microsoft.com/ja-jp/azure/azure-functions/functions-add-output-binding-cosmos-db-vs-code?pivots=programming-language-javascript&tabs=in-process)
 
 ### 3. Static Web Apps で SPA 開発
 Azure Static Web Apps と Azure Functions を使用して、React の JavaScript アプリと API を発行します。 プレビュー URL を使用して、GitHub からステージング サイトにコードをデプロイします。
