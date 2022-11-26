@@ -1,6 +1,6 @@
 # 演習 - ツイートの感情に基づいて分岐する
 
-[< Previous Challenge](https://learn.microsoft.com/training/modules/route-and-process-data-logic-apps/7-alter-control-flow-using-control-action) - **[Home](./README.md)** - [Next Challenge >](https://learn.microsoft.com/training/modules/route-and-process-data-logic-apps/9-summary)
+**[Home](./README.md)**
 
 この演習では、引き続きソーシャル メディア監視アプリで作業を行います。 ツイートの感情に基づいて分岐するコントロール アクションを追加します。 次の図は、作業を行う部分が強調表示された、アプリの概念図を示しています。
 
@@ -134,4 +134,6 @@ SQL Server アクションが作成されましたが、ツイート データ�
 1. [実行] を選択してクエリを実行し、データベースに書き込まれたすべての肯定的なツイートを一覧表示します。
 
 
-### 次のユニット:[コントロール アクションを使用して制御フローを変更する](https://learn.microsoft.com/training/modules/route-and-process-data-logic-apps/7-alter-control-flow-using-control-action)
+----
+
+**[Home](./README.md)** 

@@ -1,6 +1,6 @@
 # 演習 - Azure Static Web Apps で Twitter 分析 Web アプリをデプロイする
 
-[< Previous Challenge](./4-1-ex-create-social-media-tracker.md) - **[Home](./README.md)** 
+**[Home](./README.md)** 
 
 この演習では、ツイートデータの分析結果を提供する React Web アプリケーションを Azure Static Web Apps と Azure Functions を使用して発行します。 プレビュー URL を使用して、GitHub からサイトにコードをデプロイします。
 
@@ -192,3 +192,7 @@ React のローカル ホストは `http://localhost:3000` です。
 
 > **注意**
 > アプリがまだビルドおよびデプロイされていないことを示す Web ページが表示されても心配しないでください。 しばらくしてからブラウザーを再更新してみてください。 Azure 静的 Web アプリが作成されると、GitHub アクションによって自動的に実行されます。 そのため、スプラッシュ ページが表示されても、アプリはデプロイ中です。
+
+----
+
+**[Home](./README.md)** 

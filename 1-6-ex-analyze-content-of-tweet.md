@@ -1,6 +1,6 @@
 # 演習 - ツイートのコンテンツを分析する
 
-[< Previous Challenge](https://learn.microsoft.com/training/modules/route-and-process-data-logic-apps/5-execute-an-action) - **[Home](./README.md)** - [Next Challenge >](https://learn.microsoft.com/training/modules/route-and-process-data-logic-apps/7-alter-control-flow-using-control-action)
+**[Home](./README.md)**
 
 この演習では、引き続きソーシャル メディア監視アプリで作業を行います。 自社の製品に関するツイートが肯定的なものか否定的なものかどうかについて分析します。 ツイートのセンチメントを表す数値の "スコア" を提供するセンチメントの検出アクションを作成します。 次の図は、作業を行う部分が強調表示された、アプリの概念図を示しています。
 
@@ -73,4 +73,6 @@ Azure Text Analytics API は、テキストの自然言語処理を提供しま�
 1. センチメントの検出アクションを選択します。
 1. ツイートのテキストと Cognitive Services エンジンによってそれに与えられたスコアを見つけます。
 
-### 次のユニット:[コントロール アクションを使用して制御フローを変更する](https://learn.microsoft.com/training/modules/route-and-process-data-logic-apps/7-alter-control-flow-using-control-action)
+----
+
+**[Home](./README.md)** 

@@ -1,6 +1,6 @@
 # 演習 - はじめに
 
-[< Previous Challenge](https://learn.microsoft.com/ja-jp/training/modules/publish-static-web-app-api-preview-url/1-introduction?pivots=react) - **[Home](./README.md)** - [Next Challenge >](https://learn.microsoft.com/ja-jp/training/modules/publish-static-web-app-api-preview-url/3-build-api)
+**[Home](./README.md)** 
 
 この演習では、Web サイトを自動的に構築して発行する GitHub アクションを含む、Azure Static Web App インスタンスを作成します。
 
@@ -168,5 +168,6 @@ GitHub から最新の変更内容をプルし、Azure Static Web Apps サービ
 ## 次のステップ
 次に、Azure Functions プロジェクトを使用して API をビルドおよび実行する方法について学習します。
 
-### 次のユニット: [Azure Functions を使用して API をビルドする](https://learn.microsoft.com/ja-jp/training/modules/publish-static-web-app-api-preview-url/3-build-api)
+----
 
+**[Home](./README.md)** 
