@@ -2,7 +2,11 @@
 
 **[Home](./README.md)** 
 
-この演習では、Azure portal を使用して、Twitter トレンド トラッカー ロジック アプリを作成します。 Logic Apps デザイナーを使用して Twitter トリガー、センチメント分析を行い、最後に Cosmos DB にすべてのツイートデータを分析結果と共に保存します。 次の図は、作業を行う部分が強調表示された、アプリの概念図を示しています。
+この演習では、Azure portal を使用して、Twitter トレンド トラッカー ロジック アプリを作成します。 Logic Apps デザイナーを使用して Twitter トリガー、センチメント分析を行い、最後に Cosmos DB にすべてのツイートデータを分析結果と共に保存します。
+
+<img src="./images/image4-008.png" width="600">
+
+<br/>
 
 # 全体像 
 1. Azure ロジック アプリのリソースを見つける
