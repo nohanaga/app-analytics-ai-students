@@ -16,7 +16,8 @@
 - GitHub
 - Twitter
 
-## Scenario
+## Architecture
+<img src="./images/image4-009.png" width="800">
 
 ## Goal
 このモジュールでは、次のことを行います。
