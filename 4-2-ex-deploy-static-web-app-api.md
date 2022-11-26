@@ -2,15 +2,14 @@
 
 [< Previous Challenge](./4-1-ex-create-social-media-tracker.md) - **[Home](./README.md)** 
 
-この演習では、ツイートデータの分析結果を提供する React Web アプリケーションを Azure Static Web Apps と Azure Functions を使用して発行します。 プレビュー URL を使用して、GitHub からステージング サイトにコードをデプロイします。
+この演習では、ツイートデータの分析結果を提供する React Web アプリケーションを Azure Static Web Apps と Azure Functions を使用して発行します。 プレビュー URL を使用して、GitHub からサイトにコードをデプロイします。
 
 # 全体像 
 1. React を使用して既存の Web アプリ プロジェクトを選択する
 1. ローカルでアプリケーションを実行する
-1. アプリを Azure Static Web Apps に発行する
-1. アプリとその API を Azure Static Web Apps に発行し、ステージング サイトに発行する
+1. アプリとその API を Azure Static Web Apps に発行し、サイトに発行する
 
-<img src="./images/image4-007.png" width="600">
+<img src="./images/image4-007.png" width="800">
 
 ## リポジトリを作成する
 まず、GitHub テンプレートを使用してリポジトリを作成します。 一連のリポジトリ テンプレートを使用できます。これには、さまざまなフロントエンド フレームワークに実装されたスターター アプリが含まれています。
@@ -22,7 +21,7 @@
 1. [Create repository from template] ボタンをクリックすると、GitHub によってバックグラウンドでリポジトリが構築されます。
 
 ## アプリをローカルで実行する
-これで、GitHub アカウントに twitter-analytics-app という名前の GitHub リポジトリが作成されました。 次に、GitHub リポジトリをクローンし、使用しているコンピューター上でローカルにコードを実行します。
+これで、GitHub アカウントに `twitter-analytics-app` という名前の GitHub リポジトリが作成されました。 次に、GitHub リポジトリをクローンし、使用しているコンピューター上でローカルにコードを実行します。
 
 1. コンピューター上でターミナル ウィンドウを開きます。
 
