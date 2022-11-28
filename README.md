@@ -61,9 +61,11 @@
 
 ### 2. Functions から NoSQL Database にデータ投入
 Azure の NoSQL である Cosmos DB とはどのようなデータストアなのかを理解し、そのうえで Azure Function から実際にデータを投入、参照してみます。
- - Challenge-01 [Cosmos DB インスタンスの作成](https://learn.microsoft.com/ja-jp/training/modules/build-node-cosmos-app-vscode/2-create-cosmosdb-instance)
- - Challenge-02 [クイックスタート: Visual Studio Code を使用して Azure に JavaScript 関数を作成する](https://learn.microsoft.com/ja-jp/azure/azure-functions/create-first-function-vs-code-node)
- - Challenge-03 [Visual Studio Code を使用して Azure Functions を Azure Cosmos DB に接続する](https://learn.microsoft.com/ja-jp/azure/azure-functions/functions-add-output-binding-cosmos-db-vs-code?pivots=programming-language-javascript&tabs=in-process)
+
+ - Challenge-01 [Azure Functions の概要](https://learn.microsoft.com/azure/azure-functions/functions-overview)
+ - Challenge-02 [Cosmos DB インスタンスの作成](https://learn.microsoft.com/ja-jp/training/modules/build-node-cosmos-app-vscode/2-create-cosmosdb-instance)
+ - Challenge-03 [クイックスタート: Visual Studio Code を使用して Azure に JavaScript 関数を作成する](https://learn.microsoft.com/ja-jp/azure/azure-functions/create-first-function-vs-code-node)
+ - Challenge-04 [Visual Studio Code を使用して Azure Functions を Azure Cosmos DB に接続する](https://learn.microsoft.com/ja-jp/azure/azure-functions/functions-add-output-binding-cosmos-db-vs-code?pivots=programming-language-javascript&tabs=in-process)
 
 ### 3. Static Web Apps で SPA 開発
 Azure Static Web Apps と Azure Functions を使用して、React の JavaScript アプリと API を発行します。 プレビュー URL を使用して、GitHub からステージング サイトにコードをデプロイします。
@@ -72,10 +74,11 @@ Azure Static Web Apps と Azure Functions を使用して、React の JavaScript
  - Challenge-02 [演習 - はじめに](./3-2-exercise-get-started.md)（オプション）
  - Challenge-03 [Azure Functions を使用して API をビルドする](https://learn.microsoft.com/ja-jp/training/modules/publish-static-web-app-api-preview-url/3-build-api)
  - Challenge-04 [演習 - Azure Functions プロジェクトを作成する](./3-4-exercise-function-app.md)（オプション）
- - Challenge-05 [GitHub Actions を使用して API を発行する](https://learn.microsoft.com/ja-jp/training/modules/publish-static-web-app-api-preview-url/5-action?pivots=react)
- - Challenge-06 [演習 - GitHub Actions を使用して API を発行する](./3-6-exercise-action.md)（オプション）
- - Challenge-07 [知識チェック](https://learn.microsoft.com/ja-jp/training/modules/publish-static-web-app-api-preview-url/7-knowledge-check)
- - Challenge-08 [まとめ](https://learn.microsoft.com/ja-jp/training/modules/publish-static-web-app-api-preview-url/8-summary)
+ - Challenge-05 [GitHub とは](https://learn.microsoft.com/training/modules/introduction-to-github/2-what-is-github)
+ - Challenge-06 [GitHub Actions を使用して API を発行する](https://learn.microsoft.com/ja-jp/training/modules/publish-static-web-app-api-preview-url/5-action?pivots=react)
+ - Challenge-07 [演習 - GitHub Actions を使用して API を発行する](./3-6-exercise-action.md)（オプション）
+ - Challenge-08 [知識チェック](https://learn.microsoft.com/ja-jp/training/modules/publish-static-web-app-api-preview-url/7-knowledge-check)
+ - Challenge-09 [まとめ](https://learn.microsoft.com/ja-jp/training/modules/publish-static-web-app-api-preview-url/8-summary)
 
 ### 4. 応用: クラウドネイティブアプリを体感する
 これまでに身に着けた知識を総動員して、クラウドネイティブで AI を搭載した Web アプリケーションを開発します。
