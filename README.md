@@ -91,24 +91,24 @@ Azure Static Web Apps と Azure Functions を使用して、React の JavaScript
 ## 学習コンテンツ ラーニングパス
 [Azure 上のクラウドネイティブ アプリの概要](https://learn.microsoft.com/training/modules/introduction-to-cloud-native-apps/)
 
-### Azure Logic Apps
+#### Azure Logic Apps
 - [Azure Logic Apps でデータとアプリを統合するための自動化されたワークフローを構築する](https://learn.microsoft.com/training/paths/build-workflows-with-logic-apps/)
 
-### Azure Functions
+#### Azure Functions
 - [Azure Functions を実装する](https://learn.microsoft.com/training/paths/implement-azure-functions/)
 
-### Azure Cosmos DB
+#### Azure Cosmos DB
 - [Azure Cosmos DB を使用するソリューションを開発する](https://learn.microsoft.com/training/paths/az-204-develop-solutions-that-use-azure-cosmos-db/)
 - [Microsoft Azureデータの基礎: Azure で非リレーショナル データを探索する](https://learn.microsoft.com/training/paths/azure-data-fundamentals-explore-non-relational-data/)
 
-### Azure Cognitive Services
+#### Azure Cognitive Services
 - [AI エンジニアリングへの準備](https://learn.microsoft.com/training/paths/prepare-for-ai-engineering/)
 - [言語サービスを使用してテキストから分析情報を抽出する](https://learn.microsoft.com/training/modules/extract-insights-text-with-text-analytics-service/)
 
-### Azure Static Web Apps
+#### Azure Static Web Apps
 - [Azure Static Web Apps ラーニングパス](https://learn.microsoft.com/training/paths/azure-static-web-apps/)
 
-### GitHub
+#### GitHub
 - [Git プロジェクトを作成および変更する方法](https://learn.microsoft.com/training/modules/create-git-project/)
 - [GitHub Actions を使用してワークフローを自動化する](https://learn.microsoft.com/training/paths/automate-workflow-github-actions/)
 
