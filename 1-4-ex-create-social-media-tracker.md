@@ -53,8 +53,8 @@ Azure portal でロジック アプリを作成するときに、スターター
 
     |  設定  |  値  |
     | ---- | ---- |
-    | 検索テキスト | Shoe lang:ja exclude:retweets |
-    |  | （ご自身が気になる任意のキーワード） 日本語のみ、リツイート除外| 
+    | 検索テキスト | Shoe lang:ja exclude:retweets -filter:link |
+    |  | （ご自身が気になる任意のキーワード） 日本語のみ、リツイート除外、リンクを除外| 
     | 項目を確認する頻度 | 1 |
     | (頻度) | 分 |
     | Add new parameter | 既定値 (空白) をそのまま使用します。 |
