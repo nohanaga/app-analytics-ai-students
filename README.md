@@ -89,6 +89,13 @@ Azure Static Web Apps と Azure Functions を使用して、React の JavaScript
 <br>
 
 ## 学習コンテンツ ラーニングパス
+
+<details>
+  <summary>
+    こちらをクリック
+  </summary>
+  <div>
+
 [Azure 上のクラウドネイティブ アプリの概要](https://learn.microsoft.com/training/modules/introduction-to-cloud-native-apps/)
 
 #### Azure Logic Apps
@@ -111,6 +118,12 @@ Azure Static Web Apps と Azure Functions を使用して、React の JavaScript
 #### GitHub
 - [Git プロジェクトを作成および変更する方法](https://learn.microsoft.com/training/modules/create-git-project/)
 - [GitHub Actions を使用してワークフローを自動化する](https://learn.microsoft.com/training/paths/automate-workflow-github-actions/)
+
+
+  </div>
+</details>
+
+<br>
 
 ## LICENSE
 このドキュメントに記載されている情報 (URL や他のインターネット Web サイト参照を含む) は、将来予告なしに変更することがあります。別途記載されていない場合、このソフトウェアおよび関連するドキュメントで使用している会社、組織、製品、ドメイン名、電子メール アドレス、ロゴ、人物、場所、出来事などの名称は架空のものです。実在する商品名、団体名、個人名などとは一切関係ありません。お客様ご自身の責任において、適用されるすべての著作権関連法規に従ったご使用をお願いいたします。著作権法による制限に関係なく、マイクロソフトの書面による許可なしに、このドキュメントの一部または全部を複製したり、検索システムに保存または登録したり、別の形式に変換したりすることは、手段、目的を問わず禁じられています。ここでいう手段とは、複写や記録など、電子的、または物理的なすべての手段を含みます。
