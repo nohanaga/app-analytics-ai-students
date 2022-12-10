@@ -57,9 +57,9 @@ Azure Text Analytics API は、テキストの自然言語処理を提供しま�
 1. [documents text - 1] ボックスをクリックし、動的コンテンツのポップアップで、`ツイート テキスト` を選択します。
 1. [documents language - 1] ボックスに `ja` と入力します。
 
-    > **注意**
-    > RSS [フィード項目が公開される場合] トリガーを使用している場合は、[documents id - 1] に `フィード ID`、[documents text - 1] に `フィード タイトル` を Text Analytics サービスに送信します。
-    
+> **注意**
+> RSS [フィード項目が公開される場合] トリガーを使用している場合は、[documents id - 1] に `フィード ID`、[documents text - 1] に `フィード タイトル` を Text Analytics サービスに送信します。
+
 1. Logic Apps デザイナーで [保存] を選択します。
 
 ## センチメントの検出アクションの結果を確認する
