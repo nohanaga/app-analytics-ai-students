@@ -58,7 +58,7 @@ Azure Text Analytics API は、テキストの自然言語処理を提供しま�
 1. [documents language - 1] ボックスに `ja` と入力します。
 
     > **注意**
-    > RSS [フィード項目が公開される場合] トリガーを使用している場合は、FeedSummary を Text Analytics サービスに送信します。
+    > RSS [フィード項目が公開される場合] トリガーを使用している場合は、[documents id - 1] に `フィード ID`、[documents text - 1] に `フィード タイトル` を Text Analytics サービスに送信します。
     
 1. Logic Apps デザイナーで [保存] を選択します。
 
