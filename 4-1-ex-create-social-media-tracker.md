@@ -58,6 +58,9 @@ Azure portal でロジック アプリを作成するときに、スターター
     | [接続名] | TrendTrackerTwitterConnection |
     | [Authentication Type] | 既定値 (Use default shared application) をそのまま使用します |
 
+    > **注意**
+    > Twitter アカウントを持っておらず、その作成を希望しない場合は、次のように置き換えます。 [検索] フィールドで "フィード項目が発行される場合" を置き換え、下部のボックスで RSS トリガーを選択します。 [RSS フィードの URL] を `https://twittersimulator.azurewebsites.net/api/feed/rss` に、「選択したプロパティを使用して新しいアイテムを判断します。」 を PublishDate に、「項目を確認する頻度」を `1` に、[頻度] を `ヶ月` に設定します。
+
 1. [サインイン] をクリックします。 ご自分がお持ちの Twitter アカウントとパスワードを使用してサインインし、[連携アプリを認証] を選択します。 この操作により、Twitter アカウントへのログイン接続が確立されます。
 1. Twetter の [新しいツイートが投稿されたら] ダイアログ ボックスが再び表示されれば、有効な接続が作成されています。 ダイアログ ボックスには、3 つの必須パラメーターがあります。
 
@@ -96,6 +99,11 @@ Azure portal でロジック アプリを作成するときに、スターター
 1. [documents text - 1] ボックスをクリックし、動的コンテンツのポップアップで、`ツイート テキスト` を選択します。
 1. [documents language - 1] ボックスに `ja` と入力します。
 1. コマンド バーの [保存] を選択します。
+
+
+> **注意**
+> RSS [フィード項目が公開される場合] トリガーを使用している場合は、[documents id - 1] に `フィード ID`、[documents text - 1] に `フィード タイトル` を Text Analytics サービスに送信します。
+
 
 # 4. Cosmos DB ドキュメントの作成アクションを見つける
 Twitter から得られるデータはツイートテキストだけではありません。投稿者プロファイル、メディア URL、リツイート情報などが得られます。
@@ -171,6 +179,38 @@ Cosmos DB アクションが作成されましたが、ツイート データを
 
 1. コマンド バーの [保存] を選択します。
 1. コマンド バーから [トリガーの実行] を選択します。
+
+
+<details>
+  <summary>
+    RSS [フィード項目が公開される場合] トリガーを使用している場合は、こちらをクリック
+  </summary>
+  <div>
+
+1. [ドキュメント] ボックスに下記をコピーして貼り付けます。
+
+    ```
+    {
+    "data": {
+        "CreatedAtIso": @{formatDateTime(triggerBody()?['publishDate'])},
+        "TweetId": @{triggerBody()?['id']},
+        "TweetText": @{triggerBody()?['title']},
+        "TweetedBy": @{triggerBody()?['summary']}
+    },
+    "id": @{guid()},
+    "score": @{items('For_each')['confidenceScores']},
+    "sentences": @{items('For_each')['sentences']},
+    "sentiment": @{items('For_each')['sentiment']}
+    }
+    ```
+
+1. RSS の場合の完成形を下に示します。
+
+    <img src="./images/image4-010.png" width="600">
+
+  </div>
+</details>
+
 
 ## ツイートの結果を確認する
 これですべてのツイートデータを Cosmos DB に保存できるようになりました。Cosmos DB データベースを調べて、保存されたツイートデータを確認してみましょう。
