@@ -53,6 +53,8 @@ https://github.com/nohanaga/static-web-app-and-api-demo/archive/refs/heads/main.
 1. 「File: Open Folder...」と入力します。
 1. `twitter-analytics-app` フォルダーを選択します。
 1. [開く] を選択して、Visual Studio Code でフォルダーを開きます。
+1. 再度 <kbd>F1</kbd> キーを押してコマンド パレットを開きます。
+1. 「(アクティブなワークスペースで) Terminal: Create New Terminal」と入力して選択します。
 1. 複製したソース コードのディレクトリに変更します。
 
     ```bash
@@ -186,6 +188,20 @@ React のローカル ホストは `http://localhost:3000` です。
 
 ## 静的 Web アプリへのアプリケーション、および、API の展開
 SWA CLI を使用したデプロイを行います。デプロイが正常に完了したら、実行中のアプリをブラウザーで表示できます。
+
+  1. 開いているターミナル上で、`react-app` ディレクトリにいることを確認した後、アプリケーション バンドルを作成します。
+  
+     ```
+     npm run build
+     ```
+
+     `react-app` ディレクトリ内に `build` ディレクトリが作成されていることを確認します。
+
+  1. 1 つ上のディレクトリに移動します。
+
+     ```bash
+     cd ..
+     ```
 
   1. 静的 Web アプリに `react-app/build` 内のコンテンツ、および `api` 内の関数コードを展開します。
 

@@ -49,6 +49,8 @@ GitHub へのアクセスに制限のある環境で実施する場合は、[こ
 1. 「File: Open Folder...」と入力します。
 1. `twitter-analytics-app` フォルダーを選択します。
 1. [開く] を選択して、Visual Studio Code でフォルダーを開きます。
+1. 再度 <kbd>F1</kbd> キーを押してコマンド パレットを開きます。
+1. 「(アクティブなワークスペースで) Terminal: Create New Terminal」と入力して選択します。
 1. 複製したソース コードのディレクトリに変更します。
 
     ```bash
