@@ -72,11 +72,11 @@ Azure Static Web Apps と Azure Functions を使用して、React の JavaScript
 
  - Challenge-01 [はじめに](https://learn.microsoft.com/training/modules/publish-static-web-app-api-preview-url/1-introduction?pivots=react)
  - Challenge-02 [GitHub とは](https://learn.microsoft.com/training/modules/introduction-to-github/2-what-is-github)
- - Challenge-03 [演習 - はじめに](./3-2-exercise-get-started.md)（オプション）
+ - Challenge-03 [演習 - はじめに](./3-2-exercise-get-started.md)
  - Challenge-04 [Azure Functions を使用して API をビルドする](https://learn.microsoft.com/training/modules/publish-static-web-app-api-preview-url/3-build-api)
- - Challenge-05 [演習 - Azure Functions プロジェクトを作成する](./3-4-exercise-function-app.md)（オプション）
+ - Challenge-05 [演習 - Azure Functions プロジェクトを作成する](./3-4-exercise-function-app.md)
  - Challenge-06 [GitHub Actions を使用して API を発行する](https://learn.microsoft.com/training/modules/publish-static-web-app-api-preview-url/5-action?pivots=react)
- - Challenge-07 [演習 - GitHub Actions を使用して API を発行する](./3-6-exercise-action.md)（オプション）
+ - Challenge-07 [演習 - GitHub Actions を使用して API を発行する](./3-6-exercise-action.md)
  - Challenge-08 [知識チェック](https://learn.microsoft.com/training/modules/publish-static-web-app-api-preview-url/7-knowledge-check)
  - Challenge-09 [まとめ](https://learn.microsoft.com/training/modules/publish-static-web-app-api-preview-url/8-summary)
 
