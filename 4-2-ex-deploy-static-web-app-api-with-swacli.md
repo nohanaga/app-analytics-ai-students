@@ -4,44 +4,48 @@
 
 この演習では、ツイートデータの分析結果を提供する React Web アプリケーションを Azure Static Web Apps と Azure Functions を使用して発行します。 コードは GitHub から Azure Static Web Apps へデプロイされます。
 
-> **注意**  
-> 本演習は GitHub へのアクセス (リポジトリの作成やコミット/プル リクエスト等のリポジトリに対する作業) が必要になります。  
-GitHub へのアクセスに制限のある環境で実施する場合は、[こちら](./4-2-ex-deploy-static-web-app-api-with-swacli.md)の手順を使用して演習を進めてください。
-
 # 全体像 
 1. React を使用して既存の Web アプリ プロジェクトを選択する
 1. ローカルでアプリケーションを実行する
-1. アプリとその API を GitHub Actions を使用して Azure Static Web Apps に発行しする
+1. アプリとその API を Static Web Apps CLI を使用して Azure Static Web Apps に発行する
 
 <img src="./images/image4-007.png" width="800">
 
-## リポジトリを作成する
-まず、GitHub テンプレートを使用してリポジトリを作成します。 一連のリポジトリ テンプレートを使用できます。これには、React フロントエンド フレームワークに実装されたスターター アプリが含まれています。
+## リポジトリを取得する
 
-1. GitHub の[テンプレートからの作成ページ](https://github.com/nohanaga/static-web-app-and-api-demo)に移動し、テンプレート リポジトリを開きます。
-1. 緑色の [Use this template] ボタンをクリックし、[Create a new repository] を選択します。
-1. Owner(所有者)の入力を求められた場合は、GitHub アカウントのいずれかを選択します。
-1. リポジトリ名として `twitter-analytics-app` を入力します。
-1. [Create repository from template] ボタンをクリックすると、GitHub によってバックグラウンドでリポジトリが構築されます。
+まず、サンプルのシングル ページ アプリケーションのソースコード一式が含まれたリポジトリのコンテンツを取得します。コンテンツは GitHub にて公開されており、下記リンクから zip ファイルとして取得できます。
+
+https://github.com/nohanaga/static-web-app-and-api-demo/archive/refs/heads/main.zip
+
+参加者の環境により上記のリンクにアクセスできない場合、講師等が上記のリンクより zip ファイルを取得し、参加者と共有してください。
 
 ## アプリをローカルで実行する
-これで、GitHub アカウントに `twitter-analytics-app` という名前の GitHub リポジトリが作成されました。 次に、GitHub リポジトリをクローンし、使用しているコンピューター上でローカルにコードを実行します。
+これで、ローカル コンピュータ上にサンプルのシングル ページ アプリケーションのソースコード一式を保存できました。次に zip ファイルを解凍して、使用しているコンピューター上でローカルにコードを実行します。
 
-1. コンピューター上でターミナル ウィンドウを開きます。
+  1. ダウンロードした zip ファイルを任意の場所で解凍します。
+  1. コンピューター上でターミナル ウィンドウを開きます。  
+     Windows を使用している場合、システム トレイの検索ボックスに「`cmd`」と入力できます。
+  1. 手順 1. で zip ファイルを解凍したディレクトリに変更します。  
 
-    Windows を使用している場合、システム トレイの検索ボックスに「cmd」と入力できます。
+     ```bash
+     cd mslearn-staticwebapp-api-main
+     ```
 
-1. リポジトリを自分のマシンに複製するには、次のコードをコマンド プロンプト ウィンドウに貼り付けます。
+     ディレクトリを変更した後は下記のファイル / ディレクトリ構成になります。
 
-    `<YOUR_GITHUB_USERNAME>` は、必ずお使いの GitHub ユーザー名に置き換えてください。
-
-    ```bash
-    git clone https://github.com/<YOUR_GITHUB_USERNAME>/twitter-analytics-app
-    ```
-
-    > **注意**
-    > コマンド プロンプト ターミナルへのコピーで問題が発生した場合は、タイトル バーのアイコンを右クリックし、[プロパティ] タブで、[Ctrl + Shift + C/V をコピー/貼り付けとして使用する] がオンになっていることを確認します。
-    > zip をダウンロードした場合は zip ファイルを解凍して、使用しているコンピューター上でローカルにコードを実行します。
+     ```
+     static-web-app-and-api-demo-main
+     ├─.devcontainer/
+     ├─.vscode/
+     ├─api/
+     ├─react-app/
+     ├─.gitignore
+     ├─CODE_OF_CONDUCT.md
+     ├─LICENSE
+     ├─LICENSE-CODE
+     ├─README.md
+     └─SECURITY.md
+     ```
 
 ## アプリケーション フォルダーを開く
 1. Visual Studio Code を起動します。
@@ -142,39 +146,34 @@ React のローカル ホストは `http://localhost:3000` です。
 
 おめでとうございます。 アプリケーションをビルドし、ローカルに実行されていることをブラウザーで確認しました。 これで、アプリケーションを Azure Static Web Apps に発行できます。
 
-## Static Web Apps を作成する
-独自の GitHub リポジトリを作成したので、Visual Studio Code 用の Azure Static Web Apps 拡張機能を使用して、独自の Static Web Apps を作成できます。
+## 静的 Web アプリを作成する
+次に Azure Static Web Apps を作成します。 これを行うには、[Azure portal](https://portal.azure.com/) で Azure Static Web Apps のリソースの種類を見つける必要があります。
 
-### Visual Studio Code 用の Azure Static Web Apps 拡張機能をインストールする
+1. [Azure portal](https://portal.azure.com/) にサインインします。
+1. Azure portal のメニューで [リソースの作成] を選択し、上部の検索ボックスで [静的 Web アプリ] と入力します。 [静的 Web アプリ] ペインが表示されます。
+1. 静的 Web アプリ画面で[作成] ボタンをクリックします。 [静的 Web アプリの作成] ペインが表示されます。
 
-> **注意**
-> Visual Studio Code 用の Azure Static Web Apps 拡張機能 を既にインストールされている方はスキップしてください。
+## 静的 Web アプリの作成
+リソース グループや場所などの基本的な設定を構成しましょう。
 
-1. Visual Studio Code を開きます。
-1. 上部のメニューから [表示]>[拡張機能] の順に選択し、検索ボックスに「Azure Static Web Apps」と入力します。
-1. 拡張機能タブが Visual Studio Code に読み込まれたら、[インストール] を選択します。
+1. [基本] タブで、各設定に対して次の値を入力します。
 
-## Static Web Apps の作成
-静的 Web アプリを作成するには、現在 Azure および GitHub で認証されているセッションが必要です。 両方のプロバイダーにまだサインインしていない場合は、作成プロセス中に、拡張機能により、サインインするように求められます。
-
-1. <kbd>F1</kbd> キーを選択して、Visual Studio Code コマンド パレットを開きます。
-1. 「Azure Static Web Apps: Create Static Web App」と入力して選択します。
-
-    コマンド パレット プロンプトの残りの部分に次の値を入力します。
-
-    |  Prompt  |  値  |
+    |  設定  |  値  |
     | ---- | ---- |
-    |  名前  |  `twitter-analytics-app` と入力します  |
-    |  リージョン  |  最も近いリージョンを選択します  |
-    |  プリセット  |  React を選択します  |
-    |  アプリケーション コードの場所  |  `react-app` と入力します  |
-    |  Output location (出力場所)  |  `build` と入力します  |
-    
-1. アプリが作成されると、確認通知が Visual Studio Code に表示されます。ビルドの構成中、Visual Studio Code にビルドの状態が示されます。
+    |  **プロジェクトの詳細**  |
+    |  サブスクリプション  |  ご自分のサブスクリプション  |
+    |  リソース グループ   |  任意のリソース グループ<br>　新規作成 or これまで使ってきたリソース グループでも構いません。  |
+    |  **静的 Web アプリの詳細**  |
+    |  静的 Web アプリ名  |  twitter-analytics-app  |
+    |  プランの種類  |  Free  |
+    |  **Azure Functions とステージングの詳細**  |
+    |  Azure Functions API とステージング環境のリージョン  |  最も近い場所をドロップダウン リストから選択します。<br>　ex. East Asia  |
+    |  **デプロイの詳細**  |
+    |  ソース  |  その他  |
 
-1. Visual Studio Code の Azure アイコンをクリックし、[RESOURCES] ペインから [Static Web Apps] ツリーを開き、`twitter-analytics-app` を選択します。右クリックメニューから [Open in Portal] をクリックします。
+1. [確認および作成]、[作成] の順に選択します。 [デプロイ] ペインに、作成されたリソースが表示されます。 デプロイが正常に終了するまで待ちます。
 
-    <img src="./images/image4-006.png" width="400">
+1. デプロイが正常に終了したら、デプロイした静的 Web アプリ リソースに移動した後、[概要] 上部の [デプロイ トークンの管理] をクリックし、デプロイ トークンをコピーし控えます。このデプロイ トークンは静的 Web アプリへのシングル ページ アプリケーションの展開に使用します。
 
 1. ブラウザから Azure portal の Static Web Apps ページが開きます。左メニューから [設定] セクションの [構成] を選択します。右側の [アプリケーション設定] タブから下記の環境変数を追加して [保存] します。
 
@@ -185,15 +184,16 @@ React のローカル ホストは `http://localhost:3000` です。
     |  COSMOSDB_SQL_API_DATABASE_NAME  |  `TwitterDatabase`  |
     |  COSMOSDB_SQL_API_CONTAINER_NAME  |  `Twitter`  |
 
-1. GitHub Actions で [Actions] メニューを展開すると、デプロイの進行状況を参照できます。
+## 静的 Web アプリへのアプリケーション、および、API の展開
+SWA CLI を使用したデプロイを行います。デプロイが正常に完了したら、実行中のアプリをブラウザーで表示できます。
 
-    <img src="./images/image4-003.png" width="400">
+  1. 静的 Web アプリに `react-app/build` 内のコンテンツ、および `api` 内の関数コードを展開します。
 
-    デプロイが完了したら、Web サイトに直接移動できます。
+     ```bash
+     npx --package @azure/static-web-apps-cli swa deploy react-app/build --env Production --swa-config-location react-app --deployment-token <デプロイ トークン> --api-location ./api
+     ```
 
-1. ブラウザーで Web サイトを表示するには、Static Web Apps 拡張機能でプロジェクトを右クリックし、 \[Browse Site](サイトの参照) を選択します。
-
-    <img src="./images/image4-004.png" width="400">
+  1. コマンドが正常に終了すると、`√ Project deployed to <サイトの URL> 🚀` というメッセージが表示されるので、ブラウザーのアドレス バーに URL を入力して、展開したシングル ページ アプリケーションを表示します。  
 
 おめでとうございます。 アプリを Azure Static Web Apps にデプロイしました。
 
