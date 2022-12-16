@@ -63,7 +63,7 @@
 Azure の NoSQL である Cosmos DB とはどのようなデータストアなのかを理解し、そのうえで Azure Function から実際にデータを投入、参照してみます。
 
  - Challenge-01 [Azure Functions の概要](https://learn.microsoft.com/azure/azure-functions/functions-overview)
- - Challenge-02 [Cosmos DB インスタンスの作成](https://learn.microsoft.com/training/modules/build-node-cosmos-app-vscode/2-create-cosmosdb-instance)
+ - Challenge-02 [Azure Cosmos DB を使用するソリューションを開発する](https://learn.microsoft.com/ja-jp/training/paths/az-204-develop-solutions-that-use-azure-cosmos-db/)
  - Challenge-03 [演習 - Visual Studio Code を使用して Azure に JavaScript 関数を作成する](https://learn.microsoft.com/azure/azure-functions/create-first-function-vs-code-node)
  - Challenge-04 [演習 - Visual Studio Code を使用して Azure Functions を Azure Cosmos DB に接続する](https://learn.microsoft.com/azure/azure-functions/functions-add-output-binding-cosmos-db-vs-code?pivots=programming-language-javascript&tabs=in-process)
 
