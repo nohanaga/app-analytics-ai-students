@@ -15,7 +15,7 @@ GitHub へのアクセスに制限のある環境で実施する場合は、[こ
 
 まず、GitHub テンプレートを使用してリポジトリを作成します。 一連のリポジトリ テンプレートを使用できます。これには、さまざまなフロントエンド フレームワークに実装されたスターター アプリが含まれています。
 
-  1. GitHub の[テンプレートからの作成ページ](https://github.com/login?return_to=%2FMicrosoftDocs%2Fmslearn-staticwebapp-api%2Fgenerate%3Fazure-portal%3Dtrue)に移動し、テンプレート リポジトリを開きます。
+  1. GitHub の[テンプレートからの作成ページ](https://github.com/login?return_to=%2Fhorihiro%2Fmslearn-staticwebapp-api%2Fgenerate%3Fazure-portal%3Dtrue)に移動し、テンプレート リポジトリを開きます。
   1. 所有者の入力を求められた場合は、GitHub アカウントのいずれかを選択します。
   1. リポジトリ名として「my-static-web-app-and-api」を入力します。
   1. **Create repository from template** を選択します。  
@@ -45,11 +45,10 @@ GitHub へのアクセスに制限のある環境で実施する場合は、[こ
      cd react-app
      ```
 
-  1. 次の 2 つの `npm install` コマンドを 1 つずつ実行して、アプリケーションの依存関係を修正します。
+  1. 次の `npm install` コマンドを実行して、アプリケーションの依存モジュールをインストールします。
 
      ```bash
-     npm install node-sass@7 react-scripts@5
-     npm install --save-dev babel-eslint
+     npm install
      ```
 
   1. フロントエンド クライアント アプリケーションを実行します。
@@ -90,7 +89,7 @@ React アプリケーションが含まれるフォルダーを開きます。
 
   1. `F1` キーを選択して、Visual Studio Code コマンド パレットを開きます。
   1. 「File: Open Folder...」と入力します。
-  1. `my-static-web-app-and-api/react-app` フォルダーを選択します。
+  1. `my-static-web-app-and-api` フォルダーを選択します。
   1. [フォルダーの選択] を選択して、Visual Studio Code でフォルダーを開きます。
 
 ## Visual Studio Code で Azure にサインインする
@@ -102,31 +101,6 @@ React アプリケーションが含まれるフォルダーを開きます。
 
   1. `F1` キーを選択して、Visual Studio Code コマンド パレットを開きます。
   1. 「Azure: Select Subscriptions」を入力し、以降のステップで使用するサブスクリプションを除くすべての選択を解除します。
-
-## 変更をコミットする
-
-このプロセスで、アプリケーションの依存関係をインストールしたときに、プロジェクト内の一部のファイルが更新されました。 続行するには、これらの変更をリポジトリにコミットする必要があります。
-
-  1. `package.json` ファイルを開き、下記のように `name` や `version` と同じインデントで `engines` とその中身を追記して保存します。
-
-     ```json
-     {
-       "name": "react-app",
-       "version": "0.1.0",
-         :
-       "engines": {
-         "node": "16.14.2"
-       },
-         :
-     }
-     ```
-
-  1. `F1` キーを選択して、Visual Studio Code コマンド パレットを開きます。
-  1. 「**Git: Commit All**」と入力して選択します。
-  1. ファイルの先頭に「initial commit」と入力します。
-  1. Git コミット メッセージ ファイルを保存して閉じます。  
-  1. `F1` キーを選択して、Visual Studio Code コマンド パレットを開きます。
-  1. 「**Git: Push**」と入力して選択します。
 
 ## 静的 Web アプリの作成
 
@@ -169,6 +143,8 @@ GitHub から最新の変更内容をプルし、Azure Static Web Apps サービ
   1. `Ctrl`+`Shift`+`P` キーを押してコマンド パレットを開きます。
   1. 「Git: Pull」と入力して選択します。
   1. `Enter` キーを押します。
+  1. `.github\workflows\` フォルダー内の `azure-static-web-apps` から始まる名前の yml ファイルを開き、`api_location` の値が `api` になっていることを確認します。  
+     異なる値が入っていた場合は `api` に更新します。
 
 ## 次のステップ
 次に、Azure Functions プロジェクトを使用して API をビルドおよび実行する方法について学習します。
