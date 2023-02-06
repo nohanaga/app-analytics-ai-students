@@ -22,7 +22,7 @@
 > 新しいフォルダーを作成するか、プロジェクト ワークスペースの空のフォルダーを選択する必要があります。 
 > ワークスペースに最初から含まれているプロジェクト フォルダーは選択しないでください。
     
-![1](https://user-images.githubusercontent.com/116857296/216900380-155f8808-de3b-43fe-a1fc-85a320856708.png)
+<img alt="1" src="https://user-images.githubusercontent.com/116857296/216900380-155f8808-de3b-43fe-a1fc-85a320856708.png" width="50%">
 
 2. 画面上部にコマンドパレットが表示されるので、プロンプトで次の情報を入力します。
 
@@ -40,11 +40,13 @@
 このセクションでは、Azure サブスクリプションに関数アプリと関連リソースを作成します。この作業を進めるには、Azure にサインインしておく必要があります。
 
 1. まだ Azure にサインインしていない場合は、アクティビティバーの Azure アイコンを選択します。次に、[リソース] 領域で [Azure にサインイン...] を選択します。
-　![image](https://user-images.githubusercontent.com/116857296/216564667-2daf4953-e829-4565-bbe6-ff524802d95e.png)
+
+<img alt="image" src="https://user-images.githubusercontent.com/116857296/216564667-2daf4953-e829-4565-bbe6-ff524802d95e.png" width="60%">
 　既にサインインしていて、既存のサブスクリプションを確認できる場合は、4 に進みます。
 1. ブラウザーでプロンプトが表示されたらご利用の Azure アカウントを選択し、その Azure アカウントの資格情報を使用してサインインします。
 1. 正常にサインインしたら、新しいブラウザーウィンドウを閉じてかまいません。 ご利用の Azure アカウントに属しているサブスクリプションがサイド バーに表示されます。
 1. 次に、[リソース] 領域の + アイコンを選択し、[Create Function App in Azure] (Azure に関数アプリを作成) オプションを選択します。
+
 　![image](https://user-images.githubusercontent.com/116857296/216565933-8c5318ad-a155-44e7-b20b-f8969236bea8.png)
 1. プロンプトで、次の情報を入力します。
 
@@ -214,7 +216,8 @@ Visual Studio Code を Azure Functions Core Tools と統合することで、こ
 ![image](https://user-images.githubusercontent.com/116857296/216887314-f6ff5601-c715-4aff-91ae-ee9eca5864a2.png)
     Windows での実行に問題がある場合、Visual Studio Code の既定のターミナルが WSL Bash に設定されていないことをご確認ください。
 1. Core Tools がターミナルでまだ実行されている状態で、アクティビティ バーの Azure アイコンを選択します。 [ワークスペース] 領域で、[ローカル プロジェクト]>[関数] を展開します。HttpExample 関数を右クリックし、[Execute Function Now] (今すぐ関数を実行) を選択します。
-![image](https://user-images.githubusercontent.com/116857296/216887725-a1d7f537-5593-402c-b6c8-b3b0ea860d53.png)
+
+<img alt="image" src="https://user-images.githubusercontent.com/116857296/216887725-a1d7f537-5593-402c-b6c8-b3b0ea860d53.png" width="50%">
 1. プロンプトが表示されたら [Enter request body] (要求本文を入力してください) に、要求メッセージ本文の値が表示されます。 Enter キーを押して、この要求メッセージを関数に送信します。
 1. 応答が返されたら、Azure portal を開き Azure Cosmos DB アカウントで、 [データ エクスプローラー] を選択します。
 1. データベースとコンテナーを展開し、 [項目] を選択して、コンテナー内に作成されたドキュメントを一覧表示します。
@@ -233,12 +236,14 @@ Visual Studio Code を Azure Functions Core Tools と統合することで、こ
 
 1.アクティビティ バーの Azure アイコンを選択し、[ワークスペース] 領域でプロジェクト フォルダーを選択して、[デプロイ] ボタンを選択します。
 
-![image](https://user-images.githubusercontent.com/116857296/216890224-7a7a8e93-3845-4ab0-8957-2dabb4bddb0e.png)
+<img alt="image" src="https://user-images.githubusercontent.com/116857296/216890224-7a7a8e93-3845-4ab0-8957-2dabb4bddb0e.png" width="50%">
 1. [Deploy to Function App] (関数アプリへのデプロイ) を選択し、プロンプトで先ほど作成した関数アプリを選び、メッセージが表示されたら [Deploy] (デプロイ) を選択します。
 1. デプロイの完了後、[View Output] (出力の表示) を選択すると、作成済みの Azure リソースなど、作成とデプロイの結果が表示されます。 通知を見逃した場合は、右下隅にあるベル アイコンを選択して、再度確認します。
-![image](https://user-images.githubusercontent.com/116857296/216890286-e3b365ab-c67f-4139-af2e-15ae5aea21e3.png)
+
+<img alt="image" src="https://user-images.githubusercontent.com/116857296/216890286-e3b365ab-c67f-4139-af2e-15ae5aea21e3.png" width="50%">
 1. サイド バー内の[リソース] 領域に戻り、サブスクリプション>[Funcsion APP]>[Azure に関数アプリを作成する] の記事で作成した関数アプリ>[Functions] にデプロイした関数アプリができていることを確認し、デプロイした関数アプリを右クリックして、[Execute Function Now] (今すぐ関数を実行) を選択します。
-![image](https://user-images.githubusercontent.com/116857296/216890441-962532d1-5ab2-409a-bf37-5799671aa8d9.png)
+
+<img alt="image" src="https://user-images.githubusercontent.com/116857296/216890441-962532d1-5ab2-409a-bf37-5799671aa8d9.png" width="50%">
 1. プロンプトが表示されたら [Enter request body] (要求本文を入力してください) に、要求メッセージ本文の値が表示されます。`Azure`の内容を任意の文字に変更し、Enter キーを押してこの要求メッセージを関数に送信します。
 1. 先のローカル実行時と同様に、Azure portal で Azure Cosmos DB コンテナーに作成されたドキュメントを確認し、出力バインドによって再び新しい JSON ドキュメントが生成されていることを確認します。
 
