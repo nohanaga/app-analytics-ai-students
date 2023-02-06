@@ -19,7 +19,6 @@
 
 ### プロジェクト フォルダーを開く
 
-  1. Visual Studio Code の上部のメニューから [ファイル]>[フォルダーを閉じる] の順に選択し、現在開いている React アプリケーション フォルダーを閉じます。
   1. `F1` キーを選択して、Visual Studio Code コマンド パレットを開きます。
   1. 「File: Open Folder...」と入力します。
   1. `my-static-web-app-and-api` フォルダーを選択します。
@@ -145,9 +144,15 @@ Visual Studio Code 用 Azure Functions 拡張機能を使用して Azure Functio
      module.exports = async function (context, req) {
        try {
          const products = data.getProducts();
-         context.res.status(200).json(products);
+         context.res = {
+           status:200,
+           body: products
+         }
        } catch (error) {
-         context.res.status(500).send(error);
+         context.res = {
+           status:500,
+           body: error
+         }
        }
      };
      ```
@@ -175,18 +180,6 @@ Azure Static Web Apps に発行するときに、CORS について心配する�
 
 また最新の Azure Functions ランタイムについて、実行に使う Node.js のバージョンやこの変更に対応する設定をします。
 
-  1. *api/host.json* を開きます。
-  1. 拡張バンドルのバージョンを以下のように更新して保存します。
-
-     ```json
-     {
-       "version": "2.0",
-       "extensionBundle": {
-         "id": "Microsoft.Azure.Functions.ExtensionBundle",
-         "version": "[2.*, 3.0.0)"
-       }
-     }
-     ```
   1. *react-app/staticwebapp.config.json* を開きます。
   1. バックエンドの API を動かすランタイムを以下のように指定して保存します。
 
@@ -197,7 +190,7 @@ Azure Static Web Apps に発行するときに、CORS について心配する�
          "exclude": ["*.{css,scss,js,png,gif,ico,jpg,svg}"]
        },
        "platform": {
-         "apiRuntime": "node:16"
+         "apiRuntime": "node:18"
        }
      }
      ```
@@ -229,7 +222,7 @@ API が実行されています。 ここで、API に対して HTTP 要求を�
 次の手順でフロントエンド アプリ用にプロキシを構成します。
 
   1. *react-app/package.json* ファイルを開きます。
-  1. `"proxy": "http://localhost:7071/",` という設定を見つけます。
+  1. `"proxy": "http://127.0.0.1:7071/",` という設定を見つけます。
   1. プロキシのポートが 7071 を指していることを確認してください。
 
 ### フロントエンド Web アプリを実行する

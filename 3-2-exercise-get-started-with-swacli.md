@@ -10,7 +10,7 @@
 
 まず、サンプルのシングル ページ アプリケーションのソースコード一式が含まれたリポジトリのコンテンツを取得します。コンテンツは GitHub にて公開されており、下記リンクから zip ファイルとして取得できます。
 
-https://github.com/MicrosoftDocs/mslearn-staticwebapp-api/archive/refs/heads/main.zip
+https://github.com/horihiro/mslearn-staticwebapp-api/archive/refs/heads/main.zip
 
 参加者の環境により上記のリンクにアクセスできない場合、講師等が上記のリンクより zip ファイルを取得し、参加者と共有してください。
 
@@ -31,11 +31,8 @@ https://github.com/MicrosoftDocs/mslearn-staticwebapp-api/archive/refs/heads/mai
      ```
      mslearn-staticwebapp-api-main
      ├─.vscode/
-     ├─angular-app/
      ├─api-starter/
      ├─react-app/
-     ├─svelte-app/
-     ├─vue-app/
      ├─.gitignore
      ├─CODE_OF_CONDUCT.md
      ├─LICENSE
@@ -50,11 +47,10 @@ https://github.com/MicrosoftDocs/mslearn-staticwebapp-api/archive/refs/heads/mai
      cd react-app
      ```
 
-  1. 次の 2 つの `npm install` コマンドを 1 つずつ実行して、アプリケーションの依存関係を修正します。
+  1. 次の `npm install` コマンドを実行して、アプリケーションの依存モジュールをインストールします。
 
      ```bash
-     npm install node-sass@7 react-scripts@5
-     npm install --save-dev babel-eslint
+     npm install
      ```
 
   1. フロントエンド クライアント アプリケーションを実行します。
