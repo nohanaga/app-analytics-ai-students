@@ -67,7 +67,7 @@ https://github.com/nohanaga/static-web-app-and-api-demo/archive/refs/heads/main.
     cd react-app
     ```
 
-1. 次のコマンドを使用して、Node.js バージョン `v16.14.2` 、および npm バージョン `8.5.0` がインストールされていることを確認します。
+1. 次のコマンドを使用して、Node.js バージョン `v18.13.0` 、および npm バージョン `8.19.3` がインストールされていることを確認します。
 
     ```bash
     node -v
@@ -78,7 +78,7 @@ https://github.com/nohanaga/static-web-app-and-api-demo/archive/refs/heads/main.
     ```
 
     > **注意**
-    > Node.js バージョン `v16.14.2` 、および npm バージョン `8.5.0` がインストールされていない場合は、[こちら](https://nodejs.org/en/blog/release/v16.14.2/)などを参照してインストールしてください。
+    > Node.js バージョン `v18.13.0` 、および npm バージョン `8.19.3` がインストールされていない場合は、[こちら](https://nodejs.org/en/blog/release/v16.14.2/)などを参照してインストールしてください。
     > ローカル PC に Node.js をインストールするのが難しい場合、ローカルでのアプリ実行はスキップすることができます。
 
 1. アプリケーションの依存関係をインストールします。
