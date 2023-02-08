@@ -8,7 +8,7 @@
 作業を開始する前に、次の要件が満たされていることを確認します。
 
 - Node.js 18.13.0 。`node --version` コマンドを使用して、現在のバージョンを確認してください。
-- Azure Functions Core Tools 4.x。(.NET Core 3.1 SDK が前提条件）
+- Azure Functions Core Tools 4.x。
 - Visual Studio Code 用 Azure Functions 拡張機能。
 - Visual Studio Code 用 Azure データベース拡張機能
 
@@ -153,10 +153,10 @@ Functions では、各種のバインドで、`direction`、`type`、および�
     |  **コードでこのバインドの特定に使用する名前**  |  `outputDocument`  |
     |  **データを書き込む Azure Cosmos DB データベース**  |  `my-database`  |
     |  **データが書き込まれるデータベース コレクション**  |  `my-container`  |
-    |  **データが書き込まれるデータベース コレクション**  |  `false`  |
-    |  **データが書き込まれるデータベース コレクション**  |  `CosmosDbConnectionString`  |
-    |  **パーティション キー (省略可能)**  |  空白のまま  |
-    |  **コレクションのスループット (省略可能)**  |  空白のまま  |
+    |  **オンの場合、Azure Cosmos DB データベースとコレクションを作成する**  |  `false`  |
+    |  **Select setting from "local.setting.json" ("local.setting.json" から設定を選択する)**  |  `CosmosDbConnectionString`  |
+    |  **パーティション キー (省略可能)**  |  `undefined`  |
+    |  **コレクションのスループット (省略可能)**  |  `undefined`  |
 
 　　バインドは、**function.json** の **bindings** 配列に追加されます。このファイルは、存在する **undefined** 値をすべての削除した後、次のようになります。
 
