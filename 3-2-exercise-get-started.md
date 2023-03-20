@@ -15,7 +15,7 @@ GitHub へのアクセスに制限のある環境で実施する場合は、[こ
 
 まず、GitHub テンプレートを使用してリポジトリを作成します。 一連のリポジトリ テンプレートを使用できます。これには、さまざまなフロントエンド フレームワークに実装されたスターター アプリが含まれています。
 
-  1. GitHub の[テンプレートからの作成ページ](https://github.com/login?return_to=%2Fhorihiro%2Fmslearn-staticwebapp-api%2Fgenerate%3Fazure-portal%3Dtrue)に移動し、テンプレート リポジトリを開きます。
+  1. GitHub の[テンプレートからの作成ページ](https://github.com/login?return_to=%2FMSKK-Div2-App-Innovation%2Fmslearn-staticwebapp-api%2Fgenerate%3Fazure-portal%3Dtrue)に移動し、テンプレート リポジトリを開きます。
   1. 所有者の入力を求められた場合は、GitHub アカウントのいずれかを選択します。
   1. リポジトリ名として「my-static-web-app-and-api」を入力します。
   1. **Create repository from template** を選択します。  
