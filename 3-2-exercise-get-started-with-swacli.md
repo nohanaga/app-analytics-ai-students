@@ -10,7 +10,7 @@
 
 まず、サンプルのシングル ページ アプリケーションのソースコード一式が含まれたリポジトリのコンテンツを取得します。コンテンツは GitHub にて公開されており、下記リンクから zip ファイルとして取得できます。
 
-https://github.com/horihiro/mslearn-staticwebapp-api/archive/refs/heads/main.zip
+https://github.com/MSKK-Div2-App-Innovation/mslearn-staticwebapp-api/archive/refs/heads/main.zip
 
 参加者の環境により上記のリンクにアクセスできない場合、講師等が上記のリンクより zip ファイルを取得し、参加者と共有してください。
 
