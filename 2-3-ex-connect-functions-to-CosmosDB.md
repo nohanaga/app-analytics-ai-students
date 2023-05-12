@@ -8,9 +8,9 @@
 作業を開始する前に、次の要件が満たされていることを確認します。
 
 - Node.js 18.13.0 。`node --version` コマンドを使用して、現在のバージョンを確認してください。
-- Azure Functions Core Tools 4.x。
-- Visual Studio Code 用 Azure Functions 拡張機能。
-- Visual Studio Code 用 Azure データベース拡張機能
+- Azure Functions Core Tools 4.x（要リペア）
+- Visual Studio Code 用 Azure Functions 拡張機能（追加）
+- Visual Studio Code 用 Azure データベース拡張機能（追加）
 
 ## ローカル プロジェクトを作成する
 このセクションでは、Visual Studio Code を使用して、ローカル Azure Functions プロジェクトを JavaScript で作成します。 
@@ -29,12 +29,14 @@
     |  Prompt  |  [選択]  |
     | ---- | ---- |
     | **Select a language for your function project (関数プロジェクトの言語を選択してください)** | `JavaScript` |
+    | **Select a JavaScript Programming model** | `Model V3` |
     | **Select a template for your project's first function (プロジェクトの最初の関数のテンプレートを選択してください)** | `HTTP trigger` |
     | **Provide a function name (関数名を指定してください)** | `HttpExample`  |
     | **承認レベル** | `Anonymous`を選択。承認レベルについては、[承認キー](https://learn.microsoft.com/ja-jp/azure/azure-functions/functions-bindings-http-webhook-trigger#authorization-keys)を参照してください。 |
     | **Select how you would like to open your project (プロジェクトを開く方法を選択してください)** | `Add to workspace` |
     
-    Visual Studio Code は、この情報を使用して、HTTP トリガーによる Azure Functions プロジェクトを生成します。 ローカル プロジェクト ファイルは、エクスプローラーで表示できます。 作成されるファイルの詳細については、[生成されるプロジェクトファイル](https://learn.microsoft.com/ja-jp/azure/azure-functions/functions-develop-vs-code?tabs=javascript#generated-project-files)を参照してください。
+    * **[Do you trust the authors of the files in this folder?]** のメッセージが表示が表示されたら **[Trust the authors of ～]** にチェックを入れ、Yes ボタンをクリックします。
+    * Visual Studio Code は、この情報を使用して、HTTP トリガーによる Azure Functions プロジェクトを生成します。 ローカル プロジェクト ファイルは、エクスプローラーで表示できます。 作成されるファイルの詳細については、[生成されるプロジェクトファイル](https://learn.microsoft.com/ja-jp/azure/azure-functions/functions-develop-vs-code?tabs=javascript#generated-project-files)を参照してください。
 
 ## Azure に関数アプリを作成する
 このセクションでは、Azure サブスクリプションに関数アプリと関連リソースを作成します。この作業を進めるには、Azure にサインインしておく必要があります。
@@ -47,10 +49,7 @@
 
 2. ブラウザーでプロンプトが表示されたらご利用の Azure アカウントを選択し、その Azure アカウントの資格情報を使用してサインインします。
 3. 正常にサインインしたら、新しいブラウザーウィンドウを閉じてかまいません。 ご利用の Azure アカウントに属しているサブスクリプションがサイドバーに表示されます。
-4. 次に、**[リソース]** 領域の + アイコンを選択し、**[Create Function App in Azure] (Azure に関数アプリを作成)** オプションを選択します。
-
-　![image](https://user-images.githubusercontent.com/116857296/216565933-8c5318ad-a155-44e7-b20b-f8969236bea8.png)
-
+4. 次に、Visual Studio Code で **[表示] (V)** > **[Command Pallete...] (コマンド パレット...)** を選択したら、コマンド パレットで`Azure Functions: Create Function App in Azure...(Advanced)`を検索します。
 5. プロンプトで、次の情報を入力します。
 
     |  Prompt  |  [選択]  |
@@ -58,7 +57,15 @@
     |  **サブスクリプションの選択**  |  ご自分のサブスクリプション（**[リソース]** 領域に表示されるサブスクリプションが 1 つだけのときは、このプロンプトは表示されません。）  |
     |  **Enter a globally unique name for the function app (関数アプリのグローバルに一意の名前を入力します)**  |  URL パスに有効な名前を入力。入力した名前は、Azure Functions 内での一意性を確保するために検証されます。  |
     |  **Select a runtime stack (ランタイム スタックを選択してください)**  |  `Node.js 18 LTS`  |
-    |  **Select a location for new resources (新しいリソースの場所を選択してください)**  |  `東日本リージョン`  |
+    |  **Select an OS.**  |  `Windows`  |
+    |  **Select a resource group for new resources.**  |  今回のハンズオン用に作成したご自分のリソースグループ  |
+    |  **Select a hosting plan.**  |  `App Service Plan`  |
+    |  **Select a Windows App Service plan.**  |  `Create new App Service plan`  |
+    |  **Enter the name of the new App App Service plan.**  |  （入力されている名前をそのままにして Enter ボタンを押します。）  |
+    |  **Select a pricing tier.**  |  `Basic (B1)`  |
+    |  **Select a storage account.**  |  `Create new storage account`  |
+    |  **Enter the name of the new storage account.**  |  （入力されている名前をそのままにして Enter ボタンを押します。）  |
+    |  **Select a Application Insights resource for your app.**  |  `Skip for now`  |
     
     この拡張機能は、Azure に作成されている個々のリソースの状態を **[Azure: Activity Log] (Azure: アクティビティログ)** パネルに表示します。
     ![image](https://user-images.githubusercontent.com/116857296/216568117-02647258-8d40-4932-9254-889f449331bb.png)
@@ -68,14 +75,9 @@
 * Standard Azure ストレージアカウント。プロジェクトについての状態とその他の情報を保持します。
 * 関数アプリ。関数コードを実行するための環境となります。関数アプリを使用すると、同じホスティング プランに含まれるリソースの管理、デプロイ、共有を容易にするための論理ユニットとして関数をグループ化できます。
 * App Service プラン。関数アプリの基になるホストを定義します。
-* 関数アプリに接続された Application Insights インスタンス。アプリ内の関数の使用を追跡します。
 
 　　関数アプリが作成され展開パッケージが適用されると、通知が表示されます。
   
-> **ヒント**
-> 
-> 既定では、関数アプリに必要な Azure リソースが、指定した関数アプリ名に基づいて作成されます。 また、既定では、関数アプリを含んだ同じ新しいリソースグループがその作成先となります。それらのリソースの名前をカスタマイズしたり、既存のリソースを再利用したりする場合は、[高度な作成オプションを使用してプロジェクトを発行](https://learn.microsoft.com/ja-jp/azure/azure-functions/functions-develop-vs-code?tabs=csharp#enable-publishing-with-advanced-create-options)する必要があります。
-
 ## Azure Cosmos DB を作成する
 このセクションでは、Azure サブスクリプションに Azure Cosmos DB アカウントを作成します。アカウントを作成後、Azure Cosmos DB にデータベースとコンテナーを作成します。この作業を進めるには、Azure にサインインしておく必要があります。
 
