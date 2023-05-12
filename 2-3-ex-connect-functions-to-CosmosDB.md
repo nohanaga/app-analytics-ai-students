@@ -29,6 +29,7 @@
     |  Prompt  |  [選択]  |
     | ---- | ---- |
     | **Select a language for your function project (関数プロジェクトの言語を選択してください)** | `JavaScript` |
+    | **Select a JavaScript Programming mode** | `Model V3` |
     | **Select a template for your project's first function (プロジェクトの最初の関数のテンプレートを選択してください)** | `HTTP trigger` |
     | **Provide a function name (関数名を指定してください)** | `HttpExample`  |
     | **承認レベル** | `Anonymous`を選択。承認レベルについては、[承認キー](https://learn.microsoft.com/ja-jp/azure/azure-functions/functions-bindings-http-webhook-trigger#authorization-keys)を参照してください。 |
