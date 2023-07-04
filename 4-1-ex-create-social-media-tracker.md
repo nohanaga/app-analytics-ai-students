@@ -121,7 +121,7 @@ Twitter から得られるデータはツイートテキストだけではあり
 1. 右上の Cloud Shell で、次の curl コマンドを実行して、GitHub から setup-sql-cosmosdb.sh スクリプトをコピーします。
 
     ```bash
-    curl https://raw.githubusercontent.com/nohanaga/app-analytics-ai-students/main/scripts/setup-sql-cosmosdb.sh> setup-sql-cosmosdb.sh
+    curl https://raw.githubusercontent.com/nohanaga/app-analytics-ai-students/main/scripts/setup-sql-cosmosdb.sh > setup-sql-cosmosdb.sh
     ```
 
 1. 次のコマンドを実行して、スクリプトを実行します。**[Resource Group]** の部分を既存のリソースグループ名で置き換えます。 このコマンドは数分かかります。
